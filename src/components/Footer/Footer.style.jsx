@@ -24,13 +24,12 @@ export const StyledFooterTopWrapper = styled.div`
 export const StyledFooterTopLeft = styled.div`
   width: 463px;
   height: 222px;
-
   position: absolute;
   left: 320px;
   top: 228px;
   h3 {
     color: #ffffff;
-    font-family: 'Manrope';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -72,7 +71,6 @@ export const StyledFooterTopRightHelp = styled.div`
   margin-bottom: 32px;
   p {
     color: #ffffff;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -93,7 +91,6 @@ export const StyledFooterTopRightAdress = styled.div`
   margin-bottom: 32px;
   p {
     color: #ffffff;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -102,7 +99,6 @@ export const StyledFooterTopRightAdress = styled.div`
 
   p:nth-child(1) {
     opacity: 0.6;
-
     color: #ffffff;
     font-style: normal;
     font-weight: 600;
@@ -113,7 +109,6 @@ export const StyledFooterTopRightAdress = styled.div`
 export const StyledFooterTopRightOpenTime = styled.div`
   p {
     color: #ffffff;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -122,7 +117,6 @@ export const StyledFooterTopRightOpenTime = styled.div`
 
   p:nth-child(1) {
     opacity: 0.6;
-
     color: #ffffff;
     font-style: normal;
     font-weight: 600;
