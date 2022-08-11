@@ -124,7 +124,7 @@ export const StyledCallToActionContainer = styled.div`
       z-index: 1;
     }
   }
-
+  /* Desktop */
   @media only screen and (min-width: 1920px) {
     .photo1 {
       width: 17%;
