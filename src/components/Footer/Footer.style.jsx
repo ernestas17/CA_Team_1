@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
-  width: 100%;
   height: 706px;
 
   * {
@@ -14,22 +13,31 @@ export const StyledFooter = styled.div`
 // ---------------- Footer Top
 
 export const StyledFooterTopWrapper = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+
+  height: 549px;
+
+  display: flex;
+`;
+
+export const StyledFooterTopWrapperOut = styled.div`
+  width: 100%;
   background-color: #1e1b1b;
   opacity: 0.98;
-  height: 549px;
-  width: 100%;
 `;
 
 // ----- Footer Top Left
+
 export const StyledFooterTopLeft = styled.div`
   width: 463px;
   height: 222px;
-  position: absolute;
-  left: 320px;
-  top: 228px;
+
+  margin-top: 128px;
+
   h3 {
     color: #ffffff;
-   
+
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -62,9 +70,8 @@ export const StyledFooterTopRight = styled.div`
   width: 471px;
   height: 292px;
 
-  position: absolute;
-  left: 976px;
-  top: 228px;
+  margin-top: 128px;
+  margin-left: 192px;
 `;
 
 export const StyledFooterTopRightHelp = styled.div`
@@ -126,11 +133,16 @@ export const StyledFooterTopRightOpenTime = styled.div`
 `;
 
 // ---------------- Footer Bottom
+export const StyledFooterBottomWrapperOut = styled.div`
+  background-color: #1e1b1b;
+  width: 100%;
+`;
 
 export const StyledFooterBottom = styled.div`
-  background-color: #1e1b1b;
+  max-width: 1280px;
+  margin: 0 auto;
+
   height: 157px;
-  width: 1920px;
 
   * {
     margin: 0;
