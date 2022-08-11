@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import Image from './Image.png';
+import CallToAction from '../../components/CallToAction/CallToAction';
 
 import {
   Icon1,
@@ -266,6 +267,8 @@ const HomePage = () => {
         </div>
       </StyledOffer>
 
+      <CallToAction></CallToAction>
+
       <StyledExpierence>
         <div className='expierenceMargins'>
           <div className='expierenceNumber'>
@@ -286,7 +289,7 @@ const HomePage = () => {
           </div>
         </div>
       </StyledExpierence>
-      {/* call to action Component */}
+
       <StyledBrands>
         <div className='brandsText'>Brands we Serve</div>
         <div className='brandLogoContainer'>
