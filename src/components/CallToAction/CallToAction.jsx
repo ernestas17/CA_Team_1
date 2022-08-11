@@ -13,9 +13,11 @@ const CallToAction = () => {
           style={{ backgroundImage: `url(${Photo1})` }}
         ></div>
         <div className='orange'>
-          <h3>Get in touch with us for your service related query</h3>
-          <div className='button'>
-            <Button buttontext='Contact Us' type='secondary' />
+          <div className='orange-wrapper'>
+            <h3>Get in touch with us for your service related query</h3>
+            <div className='button'>
+              <Button buttontext='Contact Us' type='secondary' />
+            </div>
           </div>
         </div>
         <div

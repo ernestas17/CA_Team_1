@@ -5,40 +5,166 @@ export const StyledCallToActionContainer = styled.div`
   width: 100%;
   background-color: #ff6433;
 
-  .CTAcontainer {
-    max-width: 1920px;
-    display: flex;
-    margin: 0 auto;
+  @media only screen and (max-width: 640px) {
+    .CTAcontainer {
+      max-width: 100%;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .orange {
+      margin-left: 0px;
+      width: 100%;
+      height: 502px;
+      background-color: #ff6433;
+      opacity: 1;
+      position: absolute;
+      z-index: 2;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+      h3 {
+        text-align: center;
+        margin: 0;
+        height: 134px;
+        width: 300px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: -3%;
+        color: #ffffff;
+      }
+    }
+    .photo2 {
+      display: none;
+    }
   }
 
-  .photo1 {
-    width: 976px;
-    height: 502px;
-    z-index: 1;
-  }
-  .orange {
-    margin-left: 318px;
-    width: 729px;
-    height: 502px;
-    background-color: #ff6433;
-    position: absolute;
-    z-index: 2;
-    .button {
-      margin-left: 80px;
+  @media only screen and (min-width: 641px) {
+    .photo1 {
+      position: absolute;
+      width: 30%;
+      height: 502px;
+      z-index: 1;
     }
-    h3 {
-      margin: 128px 80px 48px 80px;
-      height: 134px;
-      width: 620px;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 67.2px;
-      letter-spacing: -3%;
-      color: #ffffff;
+    .orange {
+      margin-left: 30%;
+      width: 100%;
+      height: 502px;
+      background-color: #ff6433;
+      opacity: 1;
+      position: absolute;
+      z-index: 2;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .button {
+        width: 100%;
+        margin-top: 50px;
+      }
+      h3 {
+        text-align: start;
+        margin: 0;
+        height: 134px;
+        width: 60%;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -3%;
+        color: #ffffff;
+      }
     }
   }
-  .photo2 {
-    width: 944px;
-    height: 502px;
+  @media only screen and (min-width: 1064px) {
+    .photo1 {
+      width: 17%;
+      height: 502px;
+      z-index: 1;
+    }
+    .orange {
+      margin-left: 17%;
+      width: 42%;
+      height: 502px;
+      background-color: #ff6433;
+      position: absolute;
+      z-index: 4;
+      .orange-wrapper {
+        margin: 60px 80px 48px 80px;
+      }
+      justify-content: flex-start;
+      .button {
+        width: 60%;
+        margin-top: 48px;
+      }
+      h3 {
+        text-align: start;
+        margin: 0;
+        height: 134px;
+        width: 80%;
+
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32.2px;
+        letter-spacing: -3%;
+        color: #ffffff;
+      }
+    }
+    .photo2 {
+      float: right;
+      width: 50%;
+      height: 502px;
+      z-index: 1;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .photo1 {
+      width: 17%;
+      height: 502px;
+      z-index: 1;
+      background-repeat: no-repeat;
+    }
+    .orange {
+      margin-left: 17%;
+      width: 42%;
+      height: 502px;
+      background-color: #ff6433;
+      position: absolute;
+      z-index: 4;
+      .orange-wrapper {
+        margin: 128px 80px 48px 80px;
+      }
+      justify-content: flex-start;
+      .button {
+        width: 60%;
+        margin-top: 48px;
+      }
+      h3 {
+        text-align: start;
+        margin: 0;
+        height: 134px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 67.2px;
+        letter-spacing: -3%;
+        color: #ffffff;
+      }
+    }
+    .photo2 {
+      float: right;
+      width: 41%;
+      height: 502px;
+      z-index: 1;
+      background-repeat: no-repeat;
+    }
   }
 `;
