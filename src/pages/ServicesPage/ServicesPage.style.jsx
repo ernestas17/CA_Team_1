@@ -48,7 +48,7 @@ export const StyledSectionWrapper = styled.div`
 
       color: #f2f2f2;
 
-      margin-bottom: 64px;
+      margin-bottom: 48px;
     }
   }
 
