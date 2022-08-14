@@ -1,10 +1,12 @@
 import React from 'react';
 import './Button.css';
-import { StyledButton } from './Button.style';
+import { StyledButton, StyledAnchor } from './Button.style';
 
-const Button = ({ buttontext, type }) => {
+const Button = ({ buttontext, type, href }) => {
   return (
-    <StyledButton className={`btn btn-${type}`}>{buttontext}</StyledButton>
+    <StyledAnchor href={href}>
+      <StyledButton className={`btn btn-${type}`}>{buttontext}</StyledButton>
+    </StyledAnchor>
   );
 };
 
