@@ -2,8 +2,18 @@
   background-color: #ff6433;
   color: #ffffff;
 }
+.btn-primary:hover {
+  background-color: #1e1b1b;
+  color: #ffffff;
+}
 
 .btn-secondary {
   background-color: #1e1b1b;
+  color: #ffffff;
+  border: 1px solid #1e1b1b;
+}
+
+.btn-secondary:hover {
+  background-color: #ff6433;
   color: #ffffff;
 }
