@@ -27,10 +27,10 @@ const Footer = () => {
           <StyledFooterTopLeft>
             <h3>Get in touch with us for your service</h3>
             <StyledFooterTopLeftIcons>
-              <i class='fa-brands fa-facebook'></i>
-              <i class='fa-brands fa-twitter'></i>
-              <i class='fa-brands fa-instagram'></i>
-              <i class='fa-brands fa-linkedin'></i>
+              <i className='fa-brands fa-facebook'></i>
+              <i className='fa-brands fa-twitter'></i>
+              <i className='fa-brands fa-instagram'></i>
+              <i className='fa-brands fa-linkedin'></i>
             </StyledFooterTopLeftIcons>
           </StyledFooterTopLeft>
           <StyledFooterTopRight>
