@@ -12,6 +12,7 @@ import howWeWork1 from "./photos/howWeWork1.png";
 import howWeWork2 from "./photos/howWeWork2.png";
 import howWeWork3 from "./photos/howWeWork3.png";
 import howWeWork4 from "./photos/howWeWork4.png";
+import CallToAction from "../../components/CallToAction/CallToAction";
 
 const ServicesPage = () => {
   return (
@@ -36,7 +37,11 @@ const ServicesPage = () => {
                 had half every him case in packages enquire we up ecstatic
                 unsatiable saw Through True Rich Attended does
               </p>
-              <Button buttontext="Book a service" type="primary" />
+              <Button
+                buttontext="Book a service"
+                type="primary"
+                href="/services"
+              />
             </div>
           </StyledSectionWrapper>
         </StyledSectionPrimary>
@@ -153,11 +158,17 @@ const ServicesPage = () => {
                   ball joints, springs everything from struts, shocks, and tie
                   rod ends to ball joints, springs
                 </p>
-                <Button buttontext="Book a service" type="primary" />
+                <Button
+                  buttontext="Book a service"
+                  type="primary"
+                  href="/services"
+                />
               </div>
             </div>
           </StyledSectionWrapper>
         </StyledSectionPrimary>
+
+        <CallToAction />
       </main>
     </>
   );

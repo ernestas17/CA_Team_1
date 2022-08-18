@@ -32,6 +32,7 @@ export const StyledSectionWrapper = styled.div`
   }
 
   .ourServices {
+    width: 100%;
     background-color: #1e1b1b;
 
     padding: 96px 96px 146px 96px;
@@ -129,6 +130,12 @@ export const StyledSectionWrapper = styled.div`
         width: calc(50% - 16px);
       }
     }
+
+    @media ${device.tablet} {
+      .autoDiagnostics {
+        display: none;
+      }
+    }
   }
 
   .containerHowWeWork {
@@ -198,11 +205,75 @@ export const StyledSectionWrapper = styled.div`
         width: 50%;
       }
     }
+
+    @media ${device.tablet} {
+      flex-direction: column;
+      padding: 80px 0 128px 0;
+
+      .containerHowWeWorkTextLayout {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .list {
+          .listRow {
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .containerHowWeWorkImagesLayout {
+        display: none;
+      }
+    }
+
+    @media ${device.mobile} {
+      .containerHowWeWorkTextLayout {
+        align-items: unset;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media ${device.tablet} {
+    padding: 0 24px;
+
+    .layout {
+      padding: 80px 0 128px 0;
+    }
   }
 
   @media ${device.mobile} {
     .imageOurServices {
       display: none;
+    }
+
+    .ourServices {
+      h4 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+      }
     }
   }
 `;
