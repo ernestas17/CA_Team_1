@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+const device = {
+  mobile: `(max-width: 628px)`,
+
+  tablet: `(max-width: 1280px)`,
+};
 
 export const StyledCallToActionContainer = styled.div`
   height: 502px;
@@ -6,6 +11,7 @@ export const StyledCallToActionContainer = styled.div`
   background-color: #ff6433;
 
   @media only screen and (max-width: 640px) {
+    height: 300px;
     .CTAcontainer {
       max-width: 100%;
       display: flex;
@@ -15,7 +21,7 @@ export const StyledCallToActionContainer = styled.div`
     .orange {
       margin-left: 0px;
       width: 100%;
-      height: 502px;
+      height: 300px;
       background-color: #ff6433;
       opacity: 1;
       position: absolute;
@@ -47,16 +53,17 @@ export const StyledCallToActionContainer = styled.div`
   }
 
   @media only screen and (min-width: 641px) {
+    height: 300px;
     .photo1 {
       position: absolute;
       width: 30%;
-      height: 502px;
+      height: 300px;
       z-index: 1;
     }
     .orange {
       margin-left: 30%;
       width: 100%;
-      height: 502px;
+      height: 300px;
       background-color: #ff6433;
       opacity: 1;
       position: absolute;
@@ -74,7 +81,7 @@ export const StyledCallToActionContainer = styled.div`
         text-align: start;
         margin: 0;
         height: 134px;
-        width: 60%;
+        width: 40%;
         font-weight: 700;
         font-size: 28px;
         line-height: 40px;
