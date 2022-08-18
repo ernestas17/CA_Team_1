@@ -35,7 +35,7 @@ import {
 
 const HomePage = ({ deviceSize }) => {
   return (
-    <>
+    <main>
       <StyledHomeHeader deviceSize={deviceSize}>
         <div className='StyledHomeHeaderWrapper'>
           <div className='StyledHomeHeaderText'>
@@ -384,7 +384,7 @@ const HomePage = ({ deviceSize }) => {
           <FAQSection deviceSize={deviceSize}></FAQSection>
         </div>
       </StyledFaq>
-    </>
+    </main>
   );
 };
 
