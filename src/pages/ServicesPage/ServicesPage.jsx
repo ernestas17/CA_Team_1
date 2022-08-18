@@ -5,12 +5,13 @@ import {
   StyledSectionSecondary,
   StyledSectionWrapper,
 } from "./ServicesPage.style";
-import ourServicesImage from "./ourServices.jpg";
-import autoDiagnosticsImage from "./autoDiagnostics.png";
-import howWeWork1 from "./howWeWork1.png";
-import howWeWork2 from "./howWeWork2.png";
-import howWeWork3 from "./howWeWork3.png";
-import howWeWork4 from "./howWeWork4.png";
+
+import ourServicesImage from "./photos/ourServices.jpg";
+import autoDiagnosticsImage from "./photos/autoDiagnostics.png";
+import howWeWork1 from "./photos/howWeWork1.png";
+import howWeWork2 from "./photos/howWeWork2.png";
+import howWeWork3 from "./photos/howWeWork3.png";
+import howWeWork4 from "./photos/howWeWork4.png";
 
 const ServicesPage = () => {
   return (
