@@ -1,14 +1,17 @@
-import React from 'react';
 import Button from '../../components/Button';
 import Image from './Image.png';
 import CallToAction from '../../components/CallToAction/CallToAction';
+import Card from '../../components/Card/Card';
+import FAQSection from './faqComponent/FAQSection';
+import circle1Image from './photos/circle1.png';
+import circle2Image from './photos/circle2.png';
+import circle3Image from './photos/circle3.png';
 
 import {
   Icon1,
   Icon2,
   Icon3,
   Arrow,
-  Line,
   LogoIpsum,
   Logoipsum1,
   Logoipsum2,
@@ -29,19 +32,22 @@ import {
   StyledTestimonials,
   StyledFaq,
 } from './HomePage.style';
-import Card from '../../components/Card/Card';
 
-const HomePage = () => {
+const HomePage = ({ deviceSize }) => {
   return (
     <>
-      <StyledHomeHeader>
+      <StyledHomeHeader deviceSize={deviceSize}>
         <div className='StyledHomeHeaderWrapper'>
           <div className='StyledHomeHeaderText'>
             <h1>Get your vehicle service done online at one place</h1>
-            <Button buttontext='Book a service' type='primary' />
+            <Button
+              buttontext='Book a service'
+              type='primary'
+              href='/services'
+            />
             <div className='StyledHomeHeaderTextOpen'>
               <div>
-                <i class='fa-regular fa-clock'></i>
+                <i className='fa-regular fa-clock'></i>
               </div>
               <div className='StyledHomeHeaderTextInside'>
                 <p>We are open</p>
@@ -70,11 +76,11 @@ const HomePage = () => {
                   <p>Rating</p>
                 </div>
                 <div className='StyledHeaderSecondStars'>
-                  <i class='fa-solid fa-star'></i>
-                  <i class='fa-solid fa-star'></i>
-                  <i class='fa-solid fa-star'></i>
-                  <i class='fa-solid fa-star'></i>
-                  <i class='fa-regular fa-star-half-stroke'></i>
+                  <i className='fa-solid fa-star'></i>
+                  <i className='fa-solid fa-star'></i>
+                  <i className='fa-solid fa-star'></i>
+                  <i className='fa-solid fa-star'></i>
+                  <i className='fa-regular fa-star-half-stroke'></i>
                 </div>
               </div>
             </div>
@@ -82,13 +88,15 @@ const HomePage = () => {
         </div>
       </StyledHomeHeader>
 
-      <StyledQuote>
+      <StyledQuote deviceSize={deviceSize}>
         <div className='StyledQuoteMargins'>
           <div className='StyledQuoteLeft'>
             <h2>We are taking car servicing seriously</h2>
             <div className='StyledQuoteLeftFeature'>
               <div className='StyledQuoteLeftFeatureCircle'>
-                <img src={Icon1} alt='' />
+                <div className='StyledQuoteLeftFeatureCircleS'>
+                  <img src={Icon1} alt='' />
+                </div>
               </div>
               <div className='StyledQuoteLeftFeatureText'>
                 <p>Convenient service</p>
@@ -101,7 +109,9 @@ const HomePage = () => {
 
             <div className='StyledQuoteLeftFeature'>
               <div className='StyledQuoteLeftFeatureCircle'>
-                <img src={Icon2} alt='icon' />
+                <div className='StyledQuoteLeftFeatureCircleS'>
+                  <img src={Icon2} alt='' />
+                </div>
               </div>
               <div className='StyledQuoteLeftFeatureText'>
                 <p>Expert mechanics</p>
@@ -114,7 +124,9 @@ const HomePage = () => {
 
             <div className='StyledQuoteLeftFeature'>
               <div className='StyledQuoteLeftFeatureCircle'>
-                <img src={Icon3} alt='' />
+                <div className='StyledQuoteLeftFeatureCircleS'>
+                  <img src={Icon3} alt='' />
+                </div>
               </div>
               <div className='StyledQuoteLeftFeatureText'>
                 <p>Transparent pricing</p>
@@ -126,7 +138,9 @@ const HomePage = () => {
             </div>
             <div className='StyledQuoteLeftBottom'>
               <p>Know more about us</p>
-              <img src={Arrow} alt='' />
+              <a href='/aboutus'>
+                <img src={Arrow} alt='' />
+              </a>
             </div>
           </div>
 
@@ -159,7 +173,7 @@ const HomePage = () => {
         </div>
       </StyledQuote>
 
-      <StyledProcessSection>
+      <StyledProcessSection deviceSize={deviceSize}>
         <div className='StyledProcessSectionMargins'>
           <div className='StyledProcessSectionLeft'>
             <h2>We follow a clear process to help you out.</h2>
@@ -167,58 +181,65 @@ const HomePage = () => {
               Through True Rich Attended does no end it his mother since real
               had half every him case in packages enquire
             </p>
-            <Button buttontext='Learn more' type='primary' />
+            <Button buttontext='Learn more' type='primary' href='' />
           </div>
 
           <div className='StyledProcessSectionRight'>
-            <div className='StyledProcessSectionRightStep'>
-              <div className='StyledProcessSectionRightCircleWrapper'>
-                <div className='StyledProcessSectionRightCircle'>01</div>
-                <img src={Line} alt='' />
+            <div className='listContainer'>
+              <div className='listContainerRow'>
+                <div className='listContainerRowLeft'>
+                  <img src={circle1Image} alt='number 1' />
+
+                  <div className='lineContainer'>
+                    <div></div>
+                  </div>
+                </div>
+                <div className='listContainerRowRight'>
+                  <h5>Get a Quote</h5>
+                  <p>
+                    Through True Rich Attended does no end it his mother since
+                    real had half every.
+                  </p>
+                </div>
               </div>
 
-              <div className='StyledProcessSectionRightText'>
-                <p>Get a Quote</p>
-                <p>
-                  Through True Rich Attended does no end it his mother since
-                  real had half every.
-                </p>
-              </div>
-            </div>
+              <div className='listContainerRow'>
+                <div className='listContainerRowLeft'>
+                  <img src={circle2Image} alt='number 2 ' />
 
-            <div className='StyledProcessSectionRightStep'>
-              <div className='StyledProcessSectionRightCircleWrapper'>
-                <div className='StyledProcessSectionRightCircle'>02</div>
-                <img src={Line} alt='' />
-              </div>
-
-              <div className='StyledProcessSectionRightText'>
-                <p>Book an Appointment</p>
-                <p>
-                  Through True Rich Attended does no end it his mother since
-                  real had half every.
-                </p>
-              </div>
-            </div>
-
-            <div className='StyledProcessSectionRightStep'>
-              <div className='StyledProcessSectionRightCircleWrapper'>
-                <div className='StyledProcessSectionRightCircle'>03</div>
+                  <div className='lineContainer'>
+                    <div></div>
+                  </div>
+                </div>
+                <div className='listContainerRowRight'>
+                  <h5>Book an Appointment</h5>
+                  <p>
+                    Through True Rich Attended does no end it his mother since
+                    real had half every.
+                  </p>
+                </div>
               </div>
 
-              <div className='StyledProcessSectionRightText'>
-                <p>Get your Service Done</p>
-                <p>
-                  Through True Rich Attended does no end it his mother since
-                  real had half every.
-                </p>
+              <div className='listContainerRow'>
+                <div className='listContainerRowLeft'>
+                  <img src={circle3Image} alt='number 3 ' />
+
+                  <div className='lineContainer'></div>
+                </div>
+                <div className='listContainerRowRight'>
+                  <h5>Get your Service Done</h5>
+                  <p>
+                    Through True Rich Attended does no end it his mother since
+                    real had half every.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </StyledProcessSection>
 
-      <StyledOffer>
+      <StyledOffer deviceSize={deviceSize}>
         <div className='StyledOffer'>
           <div className='StyledOfferWrapper'>
             <p>What we Offer</p>
@@ -226,42 +247,44 @@ const HomePage = () => {
 
             <StyledCard>
               <Card
-                icon={<i class='fa-solid fa-eye'></i>}
+                icon={<i className='fa-solid fa-eye'></i>}
                 headline='Diagnostics'
               />
               <Card
-                icon={<i class='fa-brands fa-searchengin'></i>}
+                icon={<i className='fa-brands fa-searchengin'></i>}
                 headline='Engine Repair'
               />
               <Card
-                icon={<i class='fa-solid fa-car-side'></i>}
+                icon={<i className='fa-solid fa-car-side'></i>}
                 headline='Wheel Repair'
               />
               <Card
-                icon={<i class='fa-solid fa-oil-can'></i>}
+                icon={<i className='fa-solid fa-oil-can'></i>}
                 headline='Oil Filter'
               />
               <Card
-                icon={<i class='fa-solid fa-car-on'></i>}
+                icon={<i className='fa-solid fa-car-on'></i>}
                 headline='Body Work'
               />
               <Card
-                icon={<i class='fa-solid fa-car-battery'></i>}
+                icon={<i className='fa-solid fa-car-battery'></i>}
                 headline='Batteries'
               />
               <Card
-                icon={<i class='fa-solid fa-car-burst'></i>}
+                icon={<i className='fa-solid fa-car-burst'></i>}
                 headline='Insurance Claim'
               />
               <Card
-                icon={<i class='fa-solid fa-screwdriver-wrench'></i>}
+                icon={<i className='fa-solid fa-screwdriver-wrench'></i>}
                 headline='Custom Service'
               />
             </StyledCard>
 
             <div className='StyledArrows'>
               <p>Learn about services</p>
-              <img src={Arrow} alt='' />
+              <a href='/services'>
+                <img src={Arrow} alt='' />
+              </a>
             </div>
           </div>
         </div>
@@ -269,7 +292,7 @@ const HomePage = () => {
 
       <CallToAction></CallToAction>
 
-      <StyledExpierence>
+      <StyledExpierence deviceSize={deviceSize}>
         <div className='expierenceMargins'>
           <div className='expierenceNumber'>
             <h2>20+</h2>
@@ -290,33 +313,25 @@ const HomePage = () => {
         </div>
       </StyledExpierence>
 
-      <StyledBrands>
+      <StyledBrands deviceSize={deviceSize}>
         <div className='brandsText'>Brands we Serve</div>
         <div className='brandLogoContainer'>
           <div className='brandlogo'>
             <img src={LogoIpsum} alt='' />
             <img src={LogoIpsum} alt='' />
-          </div>
-          <div className='brandlogo'>
             <img src={Logoipsum1} alt='' />
             <img src={Logoipsum1} alt='' />
-          </div>
-          <div className='brandlogo'>
             <img src={Logoipsum2} alt='' />
             <img src={Logoipsum2} alt='' />
-          </div>
-          <div className='brandlogo'>
             <img src={Logoipsum3} alt='' />
             <img src={Logoipsum3} alt='' />
-          </div>
-          <div className='brandlogo'>
             <img src={logoipsum4} alt='' />
             <img src={logoipsum4} alt='' />
           </div>
         </div>
       </StyledBrands>
 
-      <StyledTestimonials>
+      <StyledTestimonials deviceSize={deviceSize}>
         <div className='testimonialsWrapper'>
           <h3>Our customers say the nicest things about our service</h3>
           <div className='testimonialContainer'>
@@ -362,48 +377,11 @@ const HomePage = () => {
         </div>
       </StyledTestimonials>
 
-      <StyledFaq>
+      <StyledFaq deviceSize={deviceSize}>
         <div className='faqWrapper'>
           <h3>Frequently Asked Questions</h3>
-          <div className='faq1'>
-            <div className='faq1-upper'>
-              <p>How long should a car repair take?</p>
-              <div className='faq-orangeBox'>-</div>
-            </div>
-            <div className='faq-bottom'>
-              <p>
-                I have got my car repaired at Finsweet many times before, they
-                are good at what they do. Not only did they repair my car I have
-                got my car repaired at Finsweet I have got my car repaired at
-                Finsweet
-              </p>
-            </div>
-          </div>
 
-          <div className='faq2'>
-            <div className='faq1-upper'>
-              <p>How do I schedule my car's appointment ?</p>
-              <div className='faq-orangeBox'>+</div>
-            </div>
-          </div>
-          <div className='faq2'>
-            <div className='faq1-upper'>
-              <p>What are the repair services provided?</p>
-              <div className='faq-orangeBox'>+</div>
-            </div>
-          </div>
-          <div className='faq2'>
-            <div className='faq1-upper'>
-              <p>How do I find auto body shops near me?</p>
-              <div className='faq-orangeBox'>+</div>
-            </div>
-          </div>
-          <div className='faq2'>
-            <div className='faq1-upper'>
-              <p>Genuine spare parts during car repair?</p>
-              <div className='faq-orangeBox'>+</div>
-            </div>
-          </div>
+          <FAQSection deviceSize={deviceSize}></FAQSection>
         </div>
       </StyledFaq>
     </>
