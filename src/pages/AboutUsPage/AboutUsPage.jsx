@@ -5,15 +5,25 @@ import {
   StyledSectionThreeDivBanner,
 } from "./AboutUsPage.style";
 
-import aboutUsImage from "./aboutUs.png";
-import expertServiceImage from "./expertService.png";
-import circle1Image from "./circle1.png";
-import circle2Image from "./circle2.png";
-import circle3Image from "./circle3.png";
-import orangeImage from "./orangeImage.png";
-import blackImage from "./blackImage.png";
-import purpleImage from "./purpleImage.png";
+import aboutUsImage from "./photos/aboutUs.png";
+import expertServiceImage from "./photos/expertService.png";
+import circle1Image from "./photos/circle1.png";
+import circle2Image from "./photos/circle2.png";
+import circle3Image from "./photos/circle3.png";
+import orangeImage from "./photos/orangeImage.png";
+import blackImage from "./photos/blackImage.png";
+import purpleImage from "./photos/purpleImage.png";
+import team1Image from "./photos/team1.png";
+import team2Image from "./photos/team2.png";
+import team3Image from "./photos/team3.png";
+import team4Image from "./photos/team4.png";
+import team5Image from "./photos/team5.png";
+import team6Image from "./photos/team6.png";
+
 import Button from "../../components/Button";
+import CallToAction from "../../components/CallToAction/CallToAction";
+import TeamMemberCard from "./components/TeamMemberCard";
+import ServiceCard from "./components/ServiceCard";
 
 const AboutUsPage = () => {
   return (
@@ -39,7 +49,11 @@ const AboutUsPage = () => {
                     real had half every him case in packages enquire we up
                     ecstatic unsatiable saw Through True Rich Attended does{" "}
                   </p>
-                  <Button buttontext="Book a service" type="primary" />
+                  <Button
+                    buttontext="Book a service"
+                    type="primary"
+                    href="/services"
+                  />
                 </div>
               </div>
               <div className="expertServiceContainer">
@@ -174,44 +188,32 @@ const AboutUsPage = () => {
           <StyledSectionWrapper>
             <div className="servicesLayoutContainer">
               <h3>Services we provide to our valued customers</h3>
-              <div className="servicesContainer">
-                <div>
-                  <div className="iconInCircleContainer">
-                    <div className="circle">
-                      <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                  </div>
-                  <h6>Convenient Service</h6>
-                  <p>
-                    Through True Rich Attended does no end it his mother since
-                    real had half every him end it his mother
-                  </p>
+              <div className="layout">
+                <div className="serviceCard">
+                  <ServiceCard
+                    icon="fa-solid fa-screwdriver-wrench"
+                    headline="Convenient Service"
+                    about="Through True Rich Attended does no end it his mother since
+                    real had half every him end it his mother"
+                  />
                 </div>
 
-                <div>
-                  <div className="iconInCircleContainer">
-                    <div className="circle">
-                      <i class="fa-solid fa-circle-user"></i>
-                    </div>
-                  </div>
-                  <h6>Expert Mechanics</h6>
-                  <p>
-                    Through True Rich Attended does no end it his mother since
-                    real had half every him end it his mother
-                  </p>
+                <div className="serviceCard">
+                  <ServiceCard
+                    icon="fa-solid fa-circle-user"
+                    headline="Expert Mechanics"
+                    about="hrough True Rich Attended does no end it his mother since
+                  real had half every him end it his mother"
+                  />
                 </div>
 
-                <div>
-                  <div className="iconInCircleContainer">
-                    <div className="circle">
-                      <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                    </div>
-                  </div>
-                  <h6>Transparent Pricing</h6>
-                  <p>
-                    Through True Rich Attended does no end it his mother since
-                    real had half every him end it his mother
-                  </p>
+                <div className="serviceCard">
+                  <ServiceCard
+                    icon="fa-solid fa-circle-dollar-to-slot"
+                    headline="Transparent Pricing"
+                    about="Through True Rich Attended does no end it his mother since
+                    real had half every him end it his mother"
+                  />
                 </div>
               </div>
 
@@ -239,6 +241,49 @@ const AboutUsPage = () => {
             </div>
           </StyledSectionWrapper>
         </StyledSectionSecondary>
+
+        <StyledSectionPrimary>
+          <StyledSectionWrapper>
+            <div className="meetOurTeamContainer">
+              <h3>Meet our Team</h3>
+              <div className="layout">
+                <TeamMemberCard
+                  name="Javena Melo"
+                  about="Founder, Director"
+                  image={team1Image}
+                />
+
+                <TeamMemberCard
+                  name="Paul Honson"
+                  about="Head Technician"
+                  image={team2Image}
+                />
+                <TeamMemberCard
+                  name="Devon Lane"
+                  about="Technician"
+                  image={team3Image}
+                />
+                <TeamMemberCard
+                  name="Jalen Davies"
+                  about="Marketing Manager"
+                  image={team4Image}
+                />
+                <TeamMemberCard
+                  name="Kylee Danford"
+                  about="Sales Manager"
+                  image={team5Image}
+                />
+                <TeamMemberCard
+                  name="Luisa Wilson"
+                  about="Support Assistant"
+                  image={team6Image}
+                />
+              </div>
+            </div>
+          </StyledSectionWrapper>
+        </StyledSectionPrimary>
+
+        <CallToAction />
       </main>
     </>
   );

@@ -1,12 +1,25 @@
 import styled from "styled-components";
 
+const device = {
+  mobile: `(max-width: 628px)`,
+  tablet: `(max-width: 1280px)`,
+};
+
 export const StyledSectionPrimary = styled.div`
   width: 100%;
+
+  @media ${device.tablet} {
+    padding: 0 24px;
+  }
 `;
 
 export const StyledSectionSecondary = styled.div`
   width: 100%;
   background: #f5f5f5;
+
+  @media ${device.tablet} {
+    padding: 0 24px;
+  }
 `;
 
 export const StyledSectionWrapper = styled.div`
@@ -57,6 +70,24 @@ export const StyledSectionWrapper = styled.div`
           color: #f2f2f2;
 
           margin-bottom: 48px;
+        }
+      }
+
+      @media ${device.mobile} {
+        .imageAboutUs {
+          display: none;
+        }
+
+        h4 {
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        button {
+          width: 100%;
         }
       }
     }
@@ -167,12 +198,39 @@ export const StyledSectionWrapper = styled.div`
           }
         }
       }
+
+      @media ${device.tablet} {
+        .imageExpertService {
+          display: none;
+        }
+
+        .textsExpertService {
+          width: 100%;
+
+          h4 {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+
+          .listContainer {
+            margin: 0 auto;
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
     }
   }
 
   .servicesLayoutContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 64px;
 
     h3 {
@@ -184,96 +242,116 @@ export const StyledSectionWrapper = styled.div`
       text-align: center;
 
       padding: 0 250px;
+
+      @media ${device.tablet} {
+        padding: 0 24px;
+      }
     }
 
-    .servicesContainer {
+    .layout {
+      width: 100%;
+
       display: flex;
+      justify-content: center;
+      row-gap: 24px;
+      flex-wrap: wrap;
 
-      div {
-        background-color: #fff;
-        width: calc(100% / 3);
+      .serviceCard {
         border-right: 2px solid #f2f2f2;
+        width: calc(100% / 3);
 
-        padding: 88px 66px;
+        @media ${device.tablet} {
+          width: calc(100% / 2);
+        }
 
-        .iconInCircleContainer {
-          border-right: 0;
-          padding: 0;
+        @media ${device.mobile} {
           width: 100%;
-          display: flex;
-          justify-content: center;
-        }
-
-        .circle {
-          padding: 0;
-          height: 64px;
-          width: 64px;
-          border-radius: 50%;
-          background-color: #ffdace;
-
-          display: flex;
-          align-items: center;
-          text-align: center;
-
-          margin-bottom: 24px;
-
-          i {
-            width: 100%;
-            font-size: 32px;
-          }
-        }
-
-        h6 {
-          color: #000000;
-
-          font-weight: 700;
-          font-size: 32px;
-          line-height: 48px;
-
-          text-align: center;
-          letter-spacing: -0.03em;
-
-          margin-bottom: 16px;
-        }
-
-        p {
-          color: #232536;
-          opacity: 0.6;
-
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 32px;
-
-          text-align: center;
         }
       }
 
-      div:last-child {
+      .serviceCard:last-child {
         border: 0;
       }
+
+      @media ${device.tablet} {
+        .serviceCard:nth-child(2) {
+          border: 0;
+        }
+      }
+
+      @media ${device.mobile} {
+        .serviceCard {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .numbersContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .number {
+      color: #661ce7;
+
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 76px;
     }
 
-    .numbersContainer {
+    p {
+      color: #1e1b1b;
+      opacity: 0.7;
+
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @media ${device.tablet} {
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(50% - 24px);
+        text-align: center;
+      }
+    }
+  }
+
+  .meetOurTeamContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+
+    h3 {
+      color: #1e1b1b;
+
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 84px;
+
+      text-align: center;
+      letter-spacing: -0.03em;
+    }
+
+    .layout {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
-      gap: 24px;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 48px;
+    }
+  }
 
-      .number {
-        color: #661ce7;
-
-        font-weight: 800;
-        font-size: 58px;
-        line-height: 76px;
-      }
-
-      p {
-        color: #1e1b1b;
-        opacity: 0.7;
-
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
-      }
+  @media ${device.tablet} {
+    h3 {
+      padding: 0;
     }
   }
 `;
@@ -304,5 +382,17 @@ export const StyledSectionThreeDivBanner = styled.div`
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  @media ${device.tablet} {
+    flex-wrap: wrap;
+
+    h6 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
   }
 `;
