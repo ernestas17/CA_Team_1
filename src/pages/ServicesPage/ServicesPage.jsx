@@ -27,9 +27,7 @@ const ServicesPage = () => {
                 backgroundPosition: "left",
                 backgroundSize: "cover",
               }}
-            >
-              {/* <img src={ourServicesImage} alt="our services photo" /> */}
-            </div>
+            ></div>
 
             <div className="ourServices">
               <h4>Our services</h4>

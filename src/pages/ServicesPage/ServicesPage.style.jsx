@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const device = {
+  mobile: `(max-width: 628px)`,
+  tablet: `(max-width: 1280px)`,
+};
+
 export const StyledSectionPrimary = styled.div`
   width: 100%;
 `;
@@ -192,6 +197,12 @@ export const StyledSectionWrapper = styled.div`
       img {
         width: 50%;
       }
+    }
+  }
+
+  @media ${device.mobile} {
+    .imageOurServices {
+      display: none;
     }
   }
 `;
