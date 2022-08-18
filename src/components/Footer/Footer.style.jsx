@@ -34,6 +34,7 @@ export const StyledFooterTopWrapper = styled.div`
   display: flex;
 
   @media ${device.tablet} {
+    width: 90%;
   }
   @media ${device.mobile} {
     width: 100%;
@@ -65,6 +66,11 @@ export const StyledFooterTopLeft = styled.div`
   }
 
   @media ${device.tablet} {
+    width: 50%;
+
+    h3 {
+      font-size: 38px;
+    }
   }
   @media ${device.mobile} {
     margin-top: 50px;
@@ -121,6 +127,7 @@ export const StyledFooterTopRight = styled.div`
   margin-left: 192px;
 
   @media ${device.tablet} {
+    width: 50%;
   }
   @media ${device.mobile} {
     height: auto;
@@ -262,6 +269,10 @@ export const StyledFooterBottom = styled.div`
     width: 122px;
   }
   @media ${device.tablet} {
+    width: 90%;
+    img {
+      width: 80px;
+    }
   }
   @media ${device.mobile} {
     height: auto;
@@ -311,6 +322,9 @@ export const StyledFooterBottomLinks = styled.ul`
     color: #ff6433;
   }
   @media ${device.tablet} {
+    a {
+      font-size: 14px;
+    }
   }
   @media ${device.mobile} {
     display: none;
@@ -323,5 +337,11 @@ export const StyledFooterBottomCopyRight = styled.div`
     font-size: 16px;
     line-height: 28px;
     color: #939191;
+  }
+
+  @media ${device.tablet} {
+    p {
+      font-size: 12px;
+    }
   }
 `;
