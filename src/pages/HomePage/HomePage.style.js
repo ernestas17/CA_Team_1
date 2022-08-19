@@ -40,11 +40,15 @@ export const StyledHomeHeader = styled.div`
     }
   }
   .StyledHomeHeaderText {
-    @media ${device.tablet} {
-    }
     margin-top: 44px;
     width: 624px;
     height: 452px;
+    @media ${device.tablet} {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     @media ${device.mobile} {
       width: 90%;
@@ -63,8 +67,9 @@ export const StyledHomeHeader = styled.div`
       letter-spacing: -3%;
 
       @media ${device.tablet} {
-        font-size: 64px;
-        line-height: 84px;
+        text-align: center;
+        font-size: 42px;
+        line-height: 54px;
         letter-spacing: -3%;
       }
       @media ${device.mobile} {
@@ -83,6 +88,9 @@ export const StyledHomeHeader = styled.div`
 
     @media ${device.tablet} {
       margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     @media ${device.mobile} {
       margin-top: 16px;
@@ -107,6 +115,9 @@ export const StyledHomeHeader = styled.div`
 
   .StyledHomeHeaderTextInside {
     margin-left: 13px;
+
+    @media ${device.tablet} {
+    }
 
     @media ${device.mobile} {
       margin-left: 0;
@@ -320,6 +331,7 @@ export const StyledQuote = styled.div`
     margin-bottom: 64px;
     margin-top: 40px;
     height: 894px;
+    width: 100%;
   }
   @media ${device.mobile} {
     margin-bottom: 42px;
@@ -339,6 +351,8 @@ export const StyledQuote = styled.div`
     align-items: center;
 
     @media ${device.tablet} {
+      width: 100%;
+      gap: 4%;
     }
     @media ${device.mobile} {
       flex-direction: column;
@@ -351,6 +365,8 @@ export const StyledQuote = styled.div`
     width: 584px;
 
     @media ${device.tablet} {
+      width: 48%;
+      margin: 0 auto;
     }
     @media ${device.mobile} {
       height: fit-content;
@@ -371,6 +387,9 @@ export const StyledQuote = styled.div`
       border: 1px #000000;
 
       @media ${device.tablet} {
+        text-align: center;
+        font-size: 46px;
+        line-height: 42px;
       }
       @media ${device.mobile} {
         margin-top: 42px;
@@ -389,6 +408,7 @@ export const StyledQuote = styled.div`
     display: flex;
     margin-bottom: 32px;
     @media ${device.tablet} {
+      width: 90%;
     }
     @media ${device.mobile} {
       width: 100%;
@@ -512,6 +532,7 @@ export const StyledQuote = styled.div`
     }
 
     @media ${device.tablet} {
+      width: 48%;
     }
     @media ${device.mobile} {
       height: fit-content;
@@ -535,6 +556,12 @@ export const StyledQuote = styled.div`
     }
 
     @media ${device.tablet} {
+      display: flex;
+      width: 95%;
+
+      ::placeholder {
+        font-size: 16px;
+      }
     }
     @media ${device.mobile} {
       height: 50px;
@@ -578,6 +605,10 @@ export const StyledProcessSection = styled.div`
     gap: 131px;
 
     @media ${device.tablet} {
+      margin: 0 auto;
+      height: auto;
+      width: 90%;
+      gap: 20px;
     }
     @media ${device.mobile} {
       height: auto;
@@ -656,6 +687,8 @@ export const StyledProcessSection = styled.div`
         margin-top: 12px;
 
         @media ${device.tablet} {
+          line-height: 28px;
+          font-size: 22px;
         }
         @media ${device.mobile} {
           font-size: 22px;
@@ -691,6 +724,11 @@ export const StyledProcessSection = styled.div`
       font-size: 54px;
       line-height: 76px;
       letter-spacing: -3%;
+      @media ${device.tablet} {
+        width: 90%;
+        font-size: 42px;
+        line-height: 54px;
+      }
     }
 
     p {
@@ -704,6 +742,8 @@ export const StyledProcessSection = styled.div`
     }
 
     @media ${device.tablet} {
+      height: 100%;
+      justify-content: space-between;
     }
     @media ${device.mobile} {
       width: 100%;
@@ -750,6 +790,8 @@ export const StyledOffer = styled.div`
     margin: 0 auto;
 
     @media ${device.tablet} {
+      height: auto;
+      width: 100%;
     }
     @media ${device.mobile} {
       height: auto;
@@ -784,6 +826,12 @@ export const StyledOffer = styled.div`
       margin-bottom: 64px;
     }
     @media ${device.tablet} {
+      h2 {
+        margin-top: 50px;
+        width: 80%;
+        font-size: 36px;
+        line-height: 42px;
+      }
     }
     @media ${device.mobile} {
       padding-top: 50px;
@@ -814,6 +862,10 @@ export const StyledOffer = styled.div`
     }
 
     @media ${device.tablet} {
+      gap: 10px;
+      flex-direction: column;
+      width: 100%;
+      margin: 50px 0 50px 0;
     }
     @media ${device.mobile} {
       gap: 10px;
@@ -832,6 +884,11 @@ export const StyledCard = styled.div`
   grid-row-gap: 8px;
 
   @media ${device.tablet} {
+    height: 700px;
+    max-height: 700px;
+    width: 90%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
   }
   @media ${device.mobile} {
     height: 700px;
@@ -864,6 +921,8 @@ export const StyledExpierence = styled.div`
     justify-content: space-between;
 
     @media ${device.tablet} {
+      width: 90%;
+      margin: 0 auto;
     }
     @media ${device.mobile} {
       margin: 0 auto;
@@ -899,6 +958,12 @@ export const StyledExpierence = styled.div`
       color: #1e1b1b;
     }
     @media ${device.tablet} {
+      p {
+        line-height: 26px;
+        text-align: center;
+        font-size: 18px;
+        width: 70%;
+      }
     }
     @media ${device.mobile} {
       width: 100%;
@@ -936,6 +1001,10 @@ export const StyledBrands = styled.div`
     color: #1e1b1b;
     text-align: center;
     margin-top: 128px;
+    @media ${device.tablet} {
+      margin-top: 50px;
+      font-size: 36px;
+    }
     @media ${device.mobile} {
       margin-top: 50px;
       font-size: 36px;
@@ -960,6 +1029,16 @@ export const StyledBrands = styled.div`
     grid-template-rows: repeat(2, 50%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    @media ${device.tablet} {
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: repeat(2, 50%);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      img {
+        height: 70%;
+      }
+    }
     @media ${device.mobile} {
       margin: 0 auto;
       width: 90%;
@@ -1000,12 +1079,26 @@ export const StyledTestimonials = styled.div`
       line-height: 67.2px;
       letter-spacing: -3%;
       color: #1e1b1b;
+      @media ${device.tablet} {
+        height: auto;
+        line-height: 52px;
+        font-size: 38px;
+        width: 80%;
+      }
     }
     .testimonialContainer {
       display: flex;
       gap: 48px;
       margin-top: 94px;
+      @media ${device.tablet} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        width: 90%;
+        gap: 24px;
+        margin-top: 50px;
+      }
       @media ${device.mobile} {
         width: 90%;
         gap: 24px;
@@ -1058,9 +1151,6 @@ export const StyledTestimonials = styled.div`
             font-size: 24px;
             line-height: 36px;
             letter-spacing: -3%;
-
-            @media ${device.mobile} {
-            }
           }
           p:nth-child(2) {
             margin: 0;
@@ -1076,7 +1166,10 @@ export const StyledTestimonials = styled.div`
           }
         }
       }
-
+      @media ${device.tablet} {
+        height: auto;
+        width: 100%;
+      }
       @media ${device.mobile} {
         height: auto;
         width: 100%;
@@ -1088,6 +1181,9 @@ export const StyledTestimonials = styled.div`
       align-items: center;
       display: flex;
       gap: 15px;
+      @media ${device.tablet} {
+        margin-bottom: 50px;
+      }
     }
     .testimonialLines1 {
       width: 32px;
@@ -1114,6 +1210,9 @@ export const StyledTestimonials = styled.div`
         flex-direction: column;
       }
     }
+  }
+  @media ${device.tablet} {
+    height: auto;
   }
 `;
 
