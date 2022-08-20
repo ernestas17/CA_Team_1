@@ -21,6 +21,7 @@ import team5Image from "./photos/team5.png";
 import team6Image from "./photos/team6.png";
 
 import Button from "../../components/Button";
+import ContactUs from "../../components/ContactUs";
 import CallToAction from "../../components/CallToAction/CallToAction";
 import TeamMemberCard from "./components/TeamMemberCard";
 import ServiceCard from "./components/ServiceCard";
@@ -283,7 +284,8 @@ const AboutUsPage = () => {
           </StyledSectionWrapper>
         </StyledSectionPrimary>
 
-        <CallToAction />
+        {/* <CallToAction /> */}
+        <ContactUs />
       </main>
     </>
   );
