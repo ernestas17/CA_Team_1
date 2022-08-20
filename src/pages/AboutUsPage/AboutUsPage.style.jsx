@@ -288,6 +288,7 @@ export const StyledSectionWrapper = styled.div`
   }
 
   .numbersContainer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 24px;
