@@ -1,5 +1,9 @@
+import { Link } from "react-router-dom";
+
 import Button from "../../components/Button";
 import Card from "../../components/Card";
+import ContactUs from "../../components/ContactUs";
+
 import {
   StyledSectionPrimary,
   StyledSectionSecondary,
@@ -65,10 +69,15 @@ const ServicesPage = () => {
                   mother.
                 </p>
 
-                <div className="autoDiagnosticsCTA">
-                  <p>See service details</p>
-                  <i class="fa-solid fa-right-long"></i>
-                </div>
+                <Link
+                  to={`/services/autodiagnostics`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="autoDiagnosticsCTA">
+                    <p>See service details</p>
+                    <i class="fa-solid fa-right-long"></i>
+                  </div>
+                </Link>
               </div>
 
               <div className="cardsContainer">
@@ -76,36 +85,42 @@ const ServicesPage = () => {
                   <Card
                     icon={<i class="fa-solid fa-eye"></i>}
                     headline="Diagnostics"
+                    url="autodiagnostics"
                   />
                 </div>
                 <div className="cardWrapper">
                   <Card
                     icon={<i class="fa-brands fa-searchengin"></i>}
                     headline="Engine Repair"
+                    url="enginerepair"
                   />
                 </div>
                 <div className="cardWrapper">
                   <Card
                     icon={<i class="fa-solid fa-car-on"></i>}
                     headline="Body Work"
+                    url="bodywork"
                   />
                 </div>
                 <div className="cardWrapper">
                   <Card
                     icon={<i class="fa-solid fa-car-battery"></i>}
                     headline="Batteries"
+                    url="batteries"
                   />
                 </div>
                 <div className="cardWrapper">
                   <Card
                     icon={<i class="fa-solid fa-car-side"></i>}
                     headline="Car Wash"
+                    url="carwash"
                   />
                 </div>
                 <div className="cardWrapper">
                   <Card
                     icon={<i class="fa-brands fa-searchengin"></i>}
                     headline="AC Repair"
+                    url="acrepair"
                   />
                 </div>
               </div>
@@ -168,7 +183,8 @@ const ServicesPage = () => {
           </StyledSectionWrapper>
         </StyledSectionPrimary>
 
-        <CallToAction />
+        {/* <CallToAction /> */}
+        <ContactUs />
       </main>
     </>
   );

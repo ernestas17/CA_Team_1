@@ -66,6 +66,16 @@ export const StyledSectionWrapper = styled.div`
       padding: 64px 48px 43px 48px;
       background-color: #fff;
 
+      .autoDiagnosticsCTA {
+        p:hover {
+          color: #ff6433;
+        }
+
+        i:hover {
+          color: #ff6433;
+        }
+      }
+
       .imageAutoDiagnostics {
         width: 100%;
 
