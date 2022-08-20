@@ -1,74 +1,28 @@
-import logo from './Logo-white.png';
+import { Link } from "react-router-dom";
 
-import { Link } from 'react-router-dom';
-
-import {
-  StyledFooter,
-  StyledFooterTopWrapperOut,
-  StyledFooterTopWrapper,
-  StyledFooterTopLeft,
-  StyledFooterTopLeftIcons,
-  StyledFooterTopRight,
-  StyledFooterTopRightHelp,
-  StyledFooterTopRightAdress,
-  StyledFooterTopRightOpenTime,
-  StyledFooterBottom,
-  StyledFooterBottomWrapperOut,
-  StyledFooterBottomWrapper,
-  StyledFooterBottomLinks,
-  StyledFooterBottomCopyRight,
-} from './Footer.style';
+import { StyledWrapper, StyledInnerWrapper } from "./Footer.style";
+import logo from "./Logo-white.png";
 
 const Footer = () => {
   return (
     <footer>
-      <StyledFooter>
-        <StyledFooterTopWrapperOut>
-          <StyledFooterTopWrapper>
-            <StyledFooterTopLeft>
-              <h3>Get in touch with us for your service</h3>
-              <StyledFooterTopLeftIcons>
-                <i className='fa-brands fa-facebook'></i>
-                <i className='fa-brands fa-twitter'></i>
-                <i className='fa-brands fa-instagram'></i>
-                <i className='fa-brands fa-linkedin'></i>
-              </StyledFooterTopLeftIcons>
-            </StyledFooterTopLeft>
-            <StyledFooterTopRight>
-              <StyledFooterTopRightHelp>
-                <p>Help line Noumber</p>
-                <p>1800 265 24 52</p>
-              </StyledFooterTopRightHelp>
-              <StyledFooterTopRightAdress>
-                <p>Adress</p>
-                <p>NH 234 Public Square San Francisco 65368</p>
-              </StyledFooterTopRightAdress>
-              <StyledFooterTopRightOpenTime>
-                <p>We are open</p>
-                <p>Monday to Friday 9:00 AM to  10:00  AM</p>
-              </StyledFooterTopRightOpenTime>
-            </StyledFooterTopRight>
-          </StyledFooterTopWrapper>
-        </StyledFooterTopWrapperOut>
+      <StyledWrapper>
+        <StyledInnerWrapper>
+          <div className="logo">
+            <img src={logo} className="Web-logo" alt="logo" />
+          </div>
 
-        <StyledFooterBottomWrapperOut>
-          <StyledFooterBottom>
-            <StyledFooterBottomWrapper>
-              <img src={logo} className='Web-logo' alt='logo' />
-              <StyledFooterBottomLinks>
-                <Link to={`/`}>Home</Link>
-                <Link to={`/aboutus`}>About us</Link>
-                <Link to={`/services`}>Services</Link>
-                <Link to={`/blog`}>Blog</Link>
-                <Link to={`/contact`}>Contact</Link>
-              </StyledFooterBottomLinks>
-              <StyledFooterBottomCopyRight>
-                <p>@ Copyright Finsweet 2021</p>
-              </StyledFooterBottomCopyRight>
-            </StyledFooterBottomWrapper>
-          </StyledFooterBottom>
-        </StyledFooterBottomWrapperOut>
-      </StyledFooter>
+          <div className="navigation">
+            <Link to={`/`}>Home</Link>
+            <Link to={`/aboutus`}>About us</Link>
+            <Link to={`/services`}>Services</Link>
+            <Link to={`/blog`}>Blog</Link>
+            <Link to={`/contact`}>Contact</Link>
+          </div>
+
+          <div className="copyright">@ Copyright Finsweet 2021</div>
+        </StyledInnerWrapper>
+      </StyledWrapper>
     </footer>
   );
 };
