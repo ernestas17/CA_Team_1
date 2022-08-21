@@ -12,7 +12,7 @@ export const StyledLayout = styled.div`
   padding: 128px 0;
 
   @media ${device.tablet} {
-    padding: 96px 24px;
+    padding: 48px 24px;
   }
 
   @media ${device.mobile} {
@@ -93,29 +93,83 @@ export const StyledInnerWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    gap: 48px;
+    gap: 36px;
 
     .left {
       width: 1000px;
+      gap: 32px;
+
+      h3 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .socialIcons {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .right {
+      gap: 24px;
+
+      .row {
+        gap: 4px;
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        h6 {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
     }
   }
 
   @media ${device.mobile} {
     flex-direction: column;
-    gap: 48px;
+    gap: 24px;
 
     .left {
       width: 100%;
-      gap: 32px;
+      gap: 16px;
       text-align: center;
+
+      h3 {
+        font-size: 24px;
+        line-height: 32px;
+      }
 
       .socialIcons {
         justify-content: center;
+
+        i {
+          font-size: 16px;
+        }
       }
     }
 
     .right {
+      gap: 16px;
       text-align: center;
+
+      .row {
+        gap: 2px;
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        h6 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
     }
   }
 `;
