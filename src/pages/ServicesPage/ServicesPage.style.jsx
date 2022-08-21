@@ -37,7 +37,7 @@ export const StyledSectionWrapper = styled.div`
 
     padding: 96px 96px 146px 96px;
 
-    h4 {
+    h2 {
       font-weight: 800;
       font-size: 64px;
       line-height: 84px;
@@ -218,7 +218,7 @@ export const StyledSectionWrapper = styled.div`
 
     @media ${device.tablet} {
       flex-direction: column;
-      padding: 80px 0 128px 0;
+      row-gap: 48px;
 
       .containerHowWeWorkTextLayout {
         width: 100%;
@@ -260,10 +260,14 @@ export const StyledSectionWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    padding: 0 24px;
+    padding: 80px 24px;
 
-    .layout {
-      padding: 80px 0 128px 0;
+    .ourServices {
+      padding: 48px;
+      h2 {
+        font-size: 48px;
+        line-height: 60px;
+      }
     }
   }
 
@@ -273,7 +277,7 @@ export const StyledSectionWrapper = styled.div`
     }
 
     .ourServices {
-      h4 {
+      h2 {
         text-align: center;
       }
 
