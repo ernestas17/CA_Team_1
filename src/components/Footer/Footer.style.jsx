@@ -10,11 +10,11 @@ export const StyledWrapper = styled.div`
   padding: 64px 0;
 
   @media ${device.tablet} {
-    padding: 48px 24px;
+    padding: 32px 24px;
   }
 
   @media ${device.mobile} {
-    padding: 32px 24px;
+    padding: 24px;
   }
 `;
 
@@ -54,16 +54,26 @@ export const StyledInnerWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
+
+    .copyright {
+      width: 100%;
+    }
   }
 
   @media ${device.mobile} {
-    gap: 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
 
     .navigation {
       display: none;
+    }
+
+    .copyright {
+      text-align: center;
     }
   }
 `;
