@@ -44,7 +44,7 @@ const AboutUsPage = () => {
                   }}
                 ></div>
                 <div className="textsAboutUs">
-                  <h4>About us</h4>
+                  <h2>About us</h2>
                   <p>
                     Through True Rich Attended does no end it his mother since
                     real had half every him case in packages enquire we up
@@ -59,10 +59,10 @@ const AboutUsPage = () => {
               </div>
               <div className="expertServiceContainer">
                 <div className="textsExpertService">
-                  <h4>
+                  <h3>
                     We Provide Expert Service and aim to have a long term with
                     you
-                  </h4>
+                  </h3>
                   <p>
                     We provide a full range of front end mechanical repairs for
                     all makes and models of cars, no matter
@@ -284,7 +284,7 @@ const AboutUsPage = () => {
           </StyledSectionWrapper>
         </StyledSectionPrimary>
 
-        {/* <CallToAction /> */}
+        <CallToAction />
         <ContactUs />
       </main>
     </>

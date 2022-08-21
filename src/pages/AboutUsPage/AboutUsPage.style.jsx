@@ -52,7 +52,7 @@ export const StyledSectionWrapper = styled.div`
 
         padding: 96px 96px 146px 96px;
 
-        h4 {
+        h2 {
           font-weight: 800;
           font-size: 64px;
           line-height: 84px;
@@ -73,12 +73,23 @@ export const StyledSectionWrapper = styled.div`
         }
       }
 
+      @media ${device.tablet} {
+        .textsAboutUs {
+          padding: 48px;
+
+          h2 {
+            font-size: 48px;
+            line-height: 60px;
+          }
+        }
+      }
+
       @media ${device.mobile} {
         .imageAboutUs {
           display: none;
         }
 
-        h4 {
+        h2 {
           text-align: center;
         }
 
@@ -110,7 +121,7 @@ export const StyledSectionWrapper = styled.div`
         display: flex;
         flex-direction: column;
 
-        h4 {
+        h3 {
           color: #1e1b1b;
 
           font-weight: 700;
@@ -207,8 +218,10 @@ export const StyledSectionWrapper = styled.div`
         .textsExpertService {
           width: 100%;
 
-          h4 {
+          h3 {
             text-align: center;
+            font-size: 36px;
+            line-height: 42px;
           }
 
           p {
@@ -245,6 +258,8 @@ export const StyledSectionWrapper = styled.div`
 
       @media ${device.tablet} {
         padding: 0 24px;
+        font-size: 36px;
+        line-height: 42px;
       }
     }
 
@@ -351,8 +366,17 @@ export const StyledSectionWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    h3 {
-      padding: 0;
+    padding: 80px 0;
+
+    .aboutUsLayoutContainer {
+      gap: 80px;
+    }
+
+    .meetOurTeamContainer {
+      h3 {
+        font-size: 36px;
+        line-height: 42px;
+      }
     }
   }
 `;
