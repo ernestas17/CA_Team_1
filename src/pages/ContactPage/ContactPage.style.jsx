@@ -97,10 +97,36 @@ export const StyledSectionWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    padding: 80px 24px 128px 24px;
+    padding: 80px 24px;
 
     h2 {
+      font-size: 48px;
+      line-height: 60px;
       width: 100%;
+    }
+
+    .layout {
+      .form {
+        gap: 32px;
+
+        .inputs {
+          input {
+            ::placeholder {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .moreInformation {
+        gap: 18px;
+
+        h6 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
     }
   }
 
@@ -111,7 +137,7 @@ export const StyledSectionWrapper = styled.div`
 
     .layout {
       flex-direction: column;
-      gap: 96px;
+      gap: 48px;
 
       .form {
         width: 100%;
@@ -153,6 +179,7 @@ export const StyledMapSection = styled.div`
 
   @media ${device.tablet} {
     .innerLayout {
+      height: 600px;
       .mapContainer {
         margin: 0 24px;
       }

@@ -1,5 +1,3 @@
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-
 import Button from "../../components/Button";
 import Map from "./components/Map";
 
@@ -50,17 +48,7 @@ const ContactPage = () => {
 
       <StyledSectionPrimary>
         <StyledMapSection>
-          <div
-            className="innerLayout"
-            // style={{
-            //   backgroundImage: `url(${contactUsBackgroundImage})`,
-            //   backgroundRepeat: "no-repeat",
-            //   backgroundPosition: "center",
-            //   backgroundSize: "cover",
-            //   width: "fit-content",
-            //   height: "792px",
-            // }}
-          >
+          <div className="innerLayout">
             <div className="mapContainer">
               <Map />
             </div>
