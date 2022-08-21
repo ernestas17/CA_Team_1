@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
 import ContactUs from "../../components/ContactUs";
+import CallToAction from "../../components/CallToAction";
 
 import {
   StyledSectionPrimary,
@@ -16,7 +17,6 @@ import howWeWork1 from "./photos/howWeWork1.png";
 import howWeWork2 from "./photos/howWeWork2.png";
 import howWeWork3 from "./photos/howWeWork3.png";
 import howWeWork4 from "./photos/howWeWork4.png";
-import CallToAction from "../../components/CallToAction/CallToAction";
 
 const ServicesPage = () => {
   return (
@@ -35,7 +35,7 @@ const ServicesPage = () => {
             ></div>
 
             <div className="ourServices">
-              <h4>Our services</h4>
+              <h2>Our services</h2>
               <p>
                 Through True Rich Attended does no end it his mother since real
                 had half every him case in packages enquire we up ecstatic
@@ -183,7 +183,7 @@ const ServicesPage = () => {
           </StyledSectionWrapper>
         </StyledSectionPrimary>
 
-        {/* <CallToAction /> */}
+        <CallToAction />
         <ContactUs />
       </main>
     </>
