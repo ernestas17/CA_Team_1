@@ -1,10 +1,11 @@
+import CallToAction from "../../components/CallToAction";
+import Card from "../../components/Card";
+import ContactUs from "../../components/ContactUs";
+
 import {
   StyledSectionPrimary,
   StyledSectionWrapper,
 } from "./ServiceSinglePage.style";
-
-import CallToAction from "../../components/CallToAction/CallToAction";
-import Card from "../../components/Card";
 
 import autoDiagnotcsImage from "./photos/autoDiagnostics.png";
 import engineRepairImage from "./photos/engineRepair.jpg";
@@ -184,6 +185,7 @@ const ServiceSinglePage = ({ title, img }) => {
       </StyledSectionPrimary>
 
       <CallToAction />
+      <ContactUs />
     </main>
   );
 };

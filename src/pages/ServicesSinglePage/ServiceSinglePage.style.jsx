@@ -175,7 +175,13 @@ export const StyledSectionWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    padding: 80px 24px 128px 24px;
+    padding: 80px 24px;
+    row-gap: 48px;
+
+    h3 {
+      font-size: 48px;
+      line-height: 60px;
+    }
 
     .layout {
       gap: 32px;
