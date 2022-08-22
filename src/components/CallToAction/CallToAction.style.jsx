@@ -31,7 +31,7 @@ export const StyledCallToActionContainer = styled.div`
     height: 100%;
 
     .innerLayout {
-      background-color: #ff6433;
+      background-color: ${(props) => props.theme.primary.colors.primary};
 
       max-width: 729px;
       height: 100%;
@@ -43,12 +43,13 @@ export const StyledCallToActionContainer = styled.div`
       gap: 48px;
 
       h3 {
-        color: #ffffff;
+        color: ${(props) => props.theme.primary.colors.light};
 
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 67px;
-        letter-spacing: -0.03em;
+        font-weight: ${(props) => props.theme.primary.headings.h3.fontWeight};
+        font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
+        letter-spacing: ${(props) =>
+          props.theme.primary.headings.h3.letterSpacing};
       }
     }
   }
@@ -61,8 +62,8 @@ export const StyledCallToActionContainer = styled.div`
         padding: 96px 48px;
 
         h3 {
-          font-size: 40px;
-          line-height: 52px;
+          font-size: ${(props) => props.theme.primary.headings.h4.fontSize};
+          line-height: ${(props) => props.theme.primary.headings.h4.lineHeaght};
         }
       }
     }
@@ -80,8 +81,8 @@ export const StyledCallToActionContainer = styled.div`
         padding: 32px 32px;
 
         h3 {
-          font-size: 32px;
-          line-height: 48px;
+          font-size: ${(props) => props.theme.primary.headings.h5.fontSize};
+          line-height: ${(props) => props.theme.primary.headings.h5.lineHeaght};
         }
       }
     }
