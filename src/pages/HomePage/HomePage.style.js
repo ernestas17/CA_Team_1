@@ -63,9 +63,12 @@ export const StyledHomeHeader = styled.div`
 
     h1 {
       margin-bottom: 32px;
-      font-size: 64px;
-      font-weight: 800;
-      letter-spacing: -3%;
+
+      font-weight: ${(props) => props.theme.primary.headings.h1.fontWeight};
+      font-size: ${(props) => props.theme.primary.headings.h1.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h1.lineHeaght};
+      letter-spacing: ${(props) =>
+        props.theme.primary.headings.h1.letterSpacing};
 
       @media ${device.tablet} {
         text-align: center;
@@ -103,7 +106,7 @@ export const StyledHomeHeader = styled.div`
 
     div i {
       font-size: 31px;
-      color: #e2e6e9;
+      color: ${(props) => props.theme.primary.colors.mediumGrey};
 
       @media ${device.tablet} {
         font-size: 28px;
@@ -130,7 +133,7 @@ export const StyledHomeHeader = styled.div`
     }
     p {
       margin: 0;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       font-weight: 600;
       font-size: 18px;
       line-height: 31.5px;
@@ -228,12 +231,12 @@ export const StyledHomeHeader = styled.div`
 
     height: 102px;
     width: 281.64px;
-    background-color: #ffffff;
+    background-color: ${(props) => props.theme.primary.colors.light};
     border-radius: 118px;
 
     stroke: solid;
 
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -252,14 +255,14 @@ export const StyledHomeHeader = styled.div`
     gap: 3px;
 
     p {
-      color: #ffffff;
+      color: ${(props) => props.theme.primary.colors.light};
       font-weight: 600;
       font-size: 16px;
       line-height: 28px;
     }
 
     p:nth-child(1) {
-      color: #ffffff;
+      color: ${(props) => props.theme.primary.colors.light};
       font-weight: 600;
       font-size: 24px;
       line-height: 36px;
@@ -295,12 +298,12 @@ export const StyledHomeHeader = styled.div`
 
     height: 102px;
     width: 326px;
-    background-color: #ffffff;
+    background-color: ${(props) => props.theme.primary.colors.light};
     border-radius: 118px;
 
     stroke: solid;
 
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -337,7 +340,7 @@ export const StyledHomeHeader = styled.div`
 
 export const StyledQuote = styled.div`
   height: 894px;
-  background-color: #e2e6e9;
+  background-color: ${(props) => props.theme.primary.colors.mediumGrey};
 
   @media ${device.tablet} {
     margin-bottom: 64px;
@@ -389,10 +392,11 @@ export const StyledQuote = styled.div`
     h2 {
       margin: 0;
       margin-bottom: 53px;
-      font-weight: 800;
-      font-size: 58px;
-      line-height: 76px;
-      letter-spacing: -3%;
+      font-weight: ${(props) => props.theme.primary.headings.h2.fontWeight};
+      font-size: ${(props) => props.theme.primary.headings.h2.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h2.lineHeaght};
+      letter-spacing: ${(props) =>
+        props.theme.primary.headings.h2.letterSpacing};
 
       text-shadow: 0px 4px rgba(0, 0, 0, 0.25);
 
@@ -435,7 +439,7 @@ export const StyledQuote = styled.div`
   .StyledQuoteLeftFeatureCircleS {
     height: 47px;
     width: 47px;
-    background-color: #ffffff;
+    background-color: ${(props) => props.theme.primary.colors.light};
     border-radius: 100px;
 
     display: flex;
@@ -504,7 +508,7 @@ export const StyledQuote = styled.div`
       font-size: 18px;
       line-height: 31.5px;
       font-weight: 600;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       text-align: center;
     }
 
@@ -536,11 +540,12 @@ export const StyledQuote = styled.div`
       margin: 0;
       margin-bottom: 32px;
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 67.2px;
-      letter-spacing: -3%;
-      color: #1e1b1b;
+      font-weight: ${(props) => props.theme.primary.headings.h3.fontWeight};
+      font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
+      letter-spacing: ${(props) =>
+        props.theme.primary.headings.h3.letterSpacing};
+      color: ${(props) => props.theme.primary.colors.dark};
     }
 
     @media ${device.tablet} {
@@ -563,7 +568,7 @@ export const StyledQuote = styled.div`
     border: none;
     margin-bottom: 4px;
     ::placeholder {
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       padding: 40px;
     }
 
@@ -685,17 +690,19 @@ export const StyledProcessSection = styled.div`
         }
 
         div:nth-child(1) {
-          border-right: 2px dashed #ff6433;
+          border-right: 2px dashed
+            ${(props) => props.theme.primary.colors.primary};
         }
       }
 
       h5 {
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
 
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 48px;
-
+        font-weight: ${(props) => props.theme.primary.headings.h5.fontWeight};
+        font-size: ${(props) => props.theme.primary.headings.h5.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h5.lineHeaght};
+        letter-spacing: ${(props) =>
+          props.theme.primary.headings.h5.letterSpacing};
         margin-top: 12px;
 
         @media ${device.tablet} {
@@ -708,7 +715,7 @@ export const StyledProcessSection = styled.div`
       }
 
       p {
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
         opacity: 0.6;
 
         font-weight: 600;
@@ -749,7 +756,7 @@ export const StyledProcessSection = styled.div`
       font-weight: 600;
       font-size: 16px;
       line-height: 28px;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       margin-bottom: 32px;
     }
 
@@ -794,7 +801,7 @@ export const StyledProcessSection = styled.div`
 
 // -------------------- Offer
 export const StyledOffer = styled.div`
-  background-color: #f2f2f2;
+  background-color: ${(props) => props.theme.primary.colors.extraLightGrey};
 
   .StyledOffer {
     height: 1052px;
@@ -822,7 +829,7 @@ export const StyledOffer = styled.div`
       font-size: 24px;
       line-height: 36px;
       letter-spacing: -3%;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       margin: 0;
     }
     h2 {
@@ -831,7 +838,7 @@ export const StyledOffer = styled.div`
       font-size: 58px;
       line-height: 76px;
       letter-spacing: -3%;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       text-align: center;
       margin: 0;
       margin-top: 8px;
@@ -916,7 +923,7 @@ export const StyledCard = styled.div`
 export const StyledExpierence = styled.div`
   height: 210px;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: ${(props) => props.theme.primary.colors.extraLightGrey};
 
   @media ${device.tablet} {
   }
@@ -959,7 +966,7 @@ export const StyledExpierence = styled.div`
       line-height: 76px;
       letter-spacing: -3%;
       align-items: center;
-      color: #661ce7;
+      color: ${(props) => props.theme.primary.colors.purple};
     }
     p {
       margin: 0;
@@ -967,7 +974,7 @@ export const StyledExpierence = styled.div`
       font-size: 24px;
       line-height: 36px;
       letter-spacing: -3%;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
     }
     @media ${device.tablet} {
       p {
@@ -1010,7 +1017,7 @@ export const StyledBrands = styled.div`
     font-size: 48px;
     line-height: 67.2px;
     letter-spacing: -3%;
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
     text-align: center;
     margin-top: 128px;
     @media ${device.tablet} {
@@ -1090,7 +1097,7 @@ export const StyledTestimonials = styled.div`
       font-weight: 700;
       line-height: 67.2px;
       letter-spacing: -3%;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
       @media ${device.tablet} {
         height: auto;
         line-height: 52px;
@@ -1120,7 +1127,7 @@ export const StyledTestimonials = styled.div`
     .testimonialFirst {
       height: 376px;
       width: 616px;
-      background-color: #ffffff;
+      background-color: ${(props) => props.theme.primary.colors.light};
       .textimonialText {
         height: 232px;
         width: 472px;
@@ -1140,7 +1147,7 @@ export const StyledTestimonials = styled.div`
         font-weight: 600;
         line-height: 36px;
         letter-spacing: -3%;
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
         @media ${device.mobile} {
           font-size: 14px;
           width: 90%;
@@ -1233,7 +1240,7 @@ export const StyledTestimonials = styled.div`
 export const StyledFaq = styled.div`
   height: 100%;
 
-  background-color: #e2e6e9;
+  background-color: ${(props) => props.theme.primary.colors.mediumGrey};
   @media ${device.mobile} {
     width: 100%;
     height: auto;
@@ -1262,7 +1269,7 @@ export const StyledFaq = styled.div`
       font-size: 48px;
       line-height: 67.2px;
       letter-spacing: -3%;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
 
       @media ${device.mobile} {
         padding-top: 50px;
@@ -1274,7 +1281,7 @@ export const StyledFaq = styled.div`
       margin-top: 95px;
       height: 226px;
       width: 896px;
-      background-color: #ffffff;
+      background-color: ${(props) => props.theme.primary.colors.light};
 
       @media ${device.mobile} {
         width: 90%;
@@ -1284,7 +1291,7 @@ export const StyledFaq = styled.div`
       margin-top: 12px;
       height: 112px;
       width: 896px;
-      background-color: #ffffff;
+      background-color: ${(props) => props.theme.primary.colors.light};
     }
     .faq1-upper {
       padding: 10px 40px 0 40px;
@@ -1314,7 +1321,7 @@ export const StyledFaq = styled.div`
     .faq-orangeBox {
       width: 51px;
       height: 48px;
-      background-color: #ff6433;
+      background-color: ${(props) => props.theme.primary.colors.primary};
       color: white;
 
       display: flex;
