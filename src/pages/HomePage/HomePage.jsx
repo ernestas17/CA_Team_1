@@ -390,10 +390,8 @@ const HomePage = ({ deviceSize }) => {
       <StyledFaq deviceSize={deviceSize}>
         <div className='faqWrapper'>
           <h3>Frequently Asked Questions</h3>
-
           <FAQSection deviceSize={deviceSize}></FAQSection>
         </div>
-
         <ContactUs></ContactUs>
       </StyledFaq>
     </main>
