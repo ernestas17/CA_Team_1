@@ -42,7 +42,7 @@ export const StyledHomeHeader = styled.div`
   .StyledHomeHeaderText {
     margin-top: 44px;
     width: 624px;
-    height: 452px;
+    height: 100%;
     @media ${device.tablet} {
       display: flex;
       flex-direction: column;
@@ -62,6 +62,7 @@ export const StyledHomeHeader = styled.div`
     }
 
     h1 {
+      margin-bottom: 32px;
       font-size: 64px;
       font-weight: 800;
       letter-spacing: -3%;
