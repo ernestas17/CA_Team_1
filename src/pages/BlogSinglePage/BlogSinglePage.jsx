@@ -1,5 +1,6 @@
 import { StyledBlogSingle } from './BlogSinglePage.style';
 import CallToAction from '../../components/CallToAction/CallToAction';
+import ContactUs from '../../components/ContactUs';
 import ShouldIBuyaNewCarorLeaseaNewCarin2021 from './photos/ShouldIBuyaNewCarorLeaseaNewCarin2021.png';
 import ShouldIBuyaNewCarorLeaseaNewCarin2021BOTTOM from './photos/ShouldIBuyaNewCarorLeaseaNewCarin2021BOTTOM.png';
 import americanvehiclenumberplates from './photos/americanvehiclenumberplates.jpg';
@@ -137,6 +138,7 @@ const BlogSinglePage = ({ deviceSize, posteddate, title, text, img }) => {
           </div>
         </div>
         <CallToAction />
+        <ContactUs />
       </StyledBlogSingle>
     </main>
   );
