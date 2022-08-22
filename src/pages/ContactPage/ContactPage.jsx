@@ -13,7 +13,7 @@ const ContactPage = () => {
     <main>
       <StyledSectionPrimary>
         <StyledSectionWrapper>
-          <h2>Get in touch with our experts</h2>
+          <h1>Get in touch with our experts</h1>
           <div className="layout">
             <div className="form">
               <div className="inputs">
