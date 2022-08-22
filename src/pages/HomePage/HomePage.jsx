@@ -57,10 +57,11 @@ const HomePage = ({ deviceSize }) => {
             </div>
           </div>
 
-          <div
-            className='StyledHomeHeaderImage'
-            style={{ backgroundImage: `url(${Image})` }}
-          >
+          <div className='StyledHomeHeaderImage'>
+            <div
+              className='StyledHomeHeader'
+              style={{ backgroundImage: `url(${Image})` }}
+            ></div>
             <div className='StyledHomeHeaderImageTextCircleShadow'>
               <div className='StyledHomeHeaderImageTextCircle'>
                 <div className='StyledHomeHeaderImageGreenCircle'>

@@ -164,13 +164,12 @@ export const StyledHomeHeader = styled.div`
   }
 
   .StyledHomeHeaderImage {
-    margin-left: 51px;
     position: relative;
 
     display: flex;
     flex-direction: column;
 
-    width: 605px;
+    width: 655px;
     height: 632px;
 
     color: white;
@@ -193,7 +192,18 @@ export const StyledHomeHeader = styled.div`
     }
   }
 
+  .StyledHomeHeader {
+    margin-left: 51px;
+    position: absolute;
+    width: 605px;
+    height: 100%;
+    z-index: 1;
+    @media ${device.mobile} {
+      margin-left: 0;
+    }
+  }
   .StyledHomeHeaderImageTextCircleShadow {
+    z-index: 2;
     height: 124px;
     width: 301.64px;
     border-radius: 100px;
@@ -257,8 +267,9 @@ export const StyledHomeHeader = styled.div`
     }
   }
   .StyledHomeHeaderImageCircleSecondShadow {
+    z-index: 2;
     margin-top: 260px;
-    margin-left: 300px;
+    margin-left: 350px;
 
     height: 124px;
     width: 348px;
