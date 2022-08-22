@@ -17,6 +17,7 @@ import CardM5 from './photos/CardM5.png';
 import CardM6 from './photos/CardM6.png';
 
 // Components
+import ContactUs from '../../components/ContactUs';
 import Card from './components/card';
 import CardSm from './components/CardSm';
 import CardM from './components/CardM';
@@ -60,7 +61,6 @@ const BlogPage = ({ deviceSize }) => {
           </div>
         </div>
       </StyledBlogHeader>
-
       <StyledBlogFourSection deviceSize={deviceSize}>
         <div className='wrapper'>
           <div className='first'>
@@ -127,7 +127,6 @@ const BlogPage = ({ deviceSize }) => {
           </div>
         </div>
       </StyledBlogFourSection>
-
       <StyledCards deviceSize={deviceSize}>
         <div className='wrapper'>
           <CardM
@@ -252,6 +251,7 @@ const BlogPage = ({ deviceSize }) => {
         </div>
       </StyledCards>
       <CallToAction deviceSize={deviceSize}></CallToAction>
+      <ContactUs />
     </main>
   );
 };
