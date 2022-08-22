@@ -6,7 +6,7 @@ const device = {
 };
 
 export const StyledLayout = styled.div`
-  background: #1e1b1b;
+  background: ${(props) => props.theme.primary.colors.dark};
   opacity: 0.98;
 
   padding: 128px 0;
@@ -36,13 +36,13 @@ export const StyledInnerWrapper = styled.div`
     gap: 64px;
 
     h3 {
-      color: #ffffff;
+      color: ${(props) => props.theme.primary.colors.light};
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 67px;
-
-      letter-spacing: -0.03em;
+      font-weight: ${(props) => props.theme.primary.headings.h3.fontWeight};
+      font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
+      letter-spacing: ${(props) =>
+        props.theme.primary.headings.h3.letterSpacing};
     }
 
     .socialIcons {
@@ -50,12 +50,12 @@ export const StyledInnerWrapper = styled.div`
       gap: 24px;
 
       i {
-        color: #ffffff;
+        color: ${(props) => props.theme.primary.colors.light};
         font-size: 24px;
 
         &:hover {
           cursor: pointer;
-          color: #ff6433;
+          color: ${(props) => props.theme.primary.colors.primary};
         }
       }
     }
@@ -72,21 +72,22 @@ export const StyledInnerWrapper = styled.div`
       gap: 8px;
 
       p {
-        color: #ffffff;
+        color: ${(props) => props.theme.primary.colors.light};
         opacity: 0.6;
 
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 32px;
+        font-weight: ${(props) =>
+          props.theme.primary.paragraphs.large.fontWeight};
+        font-size: ${(props) => props.theme.primary.paragraphs.large.fontSize};
+        line-height: ${(props) =>
+          props.theme.primary.paragraphs.large.lineHeaght};
       }
 
       h6 {
-        color: #ffffff;
+        color: ${(props) => props.theme.primary.colors.light};
 
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
-
         letter-spacing: -0.03em;
       }
     }
@@ -100,8 +101,8 @@ export const StyledInnerWrapper = styled.div`
       gap: 32px;
 
       h3 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: ${(props) => props.theme.primary.headings.h5.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h5.lineHeaght};
       }
 
       .socialIcons {
@@ -118,13 +119,15 @@ export const StyledInnerWrapper = styled.div`
         gap: 4px;
 
         p {
-          font-size: 16px;
-          line-height: 20px;
+          font-size: ${(props) =>
+            props.theme.primary.paragraphs.small.fontSize};
+          line-height: ${(props) =>
+            props.theme.primary.paragraphs.small.lineHeaght};
         }
 
         h6 {
-          font-size: 20px;
-          line-height: 32px;
+          font-size: ${(props) => props.theme.primary.headings.h6.fontSize};
+          line-height: ${(props) => props.theme.primary.headings.h6.lineHeaght};
         }
       }
     }
@@ -140,8 +143,8 @@ export const StyledInnerWrapper = styled.div`
       text-align: center;
 
       h3 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: ${(props) => props.theme.primary.headings.h6.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h6.lineHeaght};
       }
 
       .socialIcons {
@@ -161,13 +164,17 @@ export const StyledInnerWrapper = styled.div`
         gap: 2px;
 
         p {
-          font-size: 16px;
-          line-height: 20px;
+          font-size: ${(props) =>
+            props.theme.primary.paragraphs.small.fontSize};
+          line-height: ${(props) =>
+            props.theme.primary.paragraphs.small.lineHeaght};
         }
 
         h6 {
-          font-size: 18px;
-          line-height: 24px;
+          font-size: ${(props) =>
+            props.theme.primary.paragraphs.large.fontSize};
+          line-height: ${(props) =>
+            props.theme.primary.paragraphs.large.lineHeaght};
         }
       }
     }
