@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ServiceSinglePage from './pages/ServicesSinglePage/ServiceSinglePage';
 import BlogSinglePage from './pages/BlogSinglePage/BlogSinglePage';
-
+import TEXTS from './shared/texts';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
@@ -71,15 +71,27 @@ function App() {
             element={<ServiceSinglePage img='carwash' title='Car Wash' />}
           />
           <Route path='/services/customservice' element={<ServicesPage />} />
+
           <Route path='/blog' element={<BlogPage />} />
           <Route
             path='/blog/ShouldIBuyaNewCarorLeaseaNewCarin2021'
             element={
               <BlogSinglePage
-                img='ShouldIBuyaNewCarorLeaseaNewCarin2021'
-                posteddate='Posted on October 6th 2021'
-                title='Should I Buy a New Car or Lease a New Car in 2021?'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                posteddate={
+                  TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021
+                    .title
+                }
+                text={
+                  TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021
+                    .underTitleText
+                }
+                img={
+                  TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021.img
+                }
               />
             }
           />
@@ -87,10 +99,21 @@ function App() {
             path='/blog/GetanAwesomeNumberPlateforYourNewCar'
             element={
               <BlogSinglePage
-                img='americanvehiclenumberplates'
-                posteddate='Posted on October 6th 2021'
-                title='Get an Awesome Number Plate for Your New Car'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar
+                    .title
+                }
+                text={
+                  TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar
+                    .underTitleText
+                }
               />
             }
           />
@@ -98,10 +121,22 @@ function App() {
             path='/blog/WouldyouLetaRobotDriveyourCarOurAIFuture'
             element={
               <BlogSinglePage
-                img='WouldyouLetaRobotDriveyourCarOurAIFuture'
-                posteddate='Posted on October 6th 2021'
-                title='Would you Let a Robot Drive your Car? Our AI Future'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                    .img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                    .title
+                }
+                text={
+                  TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                    .underTitleText
+                }
               />
             }
           />
@@ -109,10 +144,21 @@ function App() {
             path='/blog/WillElectricTechnologySoonRuleTheRoad'
             element={
               <BlogSinglePage
-                img='WillElectricTechnologySoonRuleTheRoad'
-                posteddate='Posted on October 6th 2021'
-                title='Would you Let a Robot Drive your Car? Our AI Future'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad
+                    .title
+                }
+                text={
+                  TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad
+                    .text
+                }
               />
             }
           />
@@ -120,10 +166,22 @@ function App() {
             path='/blog/5-genius-car-accessories-you-should-never-drive-without'
             element={
               <BlogSinglePage
-                img='ShouldIBuyaNewCarorLeaseaNewCarin2021'
-                posteddate='Posted on October 6th 2021'
-                title='5 Genius Car Accessories You Should Never Drive Without'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithout.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithout.posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithout.title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithout.text
+                }
               />
             }
           />
@@ -131,10 +189,23 @@ function App() {
             path='/blog/5-genius-car-accessories-you-should-never-drive-without-second'
             element={
               <BlogSinglePage
-                img='americanvehiclenumberplates'
-                posteddate='Posted on October 6th 2021'
-                title='5 Genius Car Accessories You Should Never Drive Without'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutsecond
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.text
+                }
               />
             }
           />
@@ -142,10 +213,22 @@ function App() {
             path='/blog/we-provide-blow-straight-past-it-with-the-wheels-skidding'
             element={
               <BlogSinglePage
-                img='WouldyouLetaRobotDriveyourCarOurAIFuture'
-                posteddate='Posted on October 6th 2021'
-                title='We provide blow straight past it with the wheels skidding'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskidding.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskidding.posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskidding.title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskidding.text
+                }
               />
             }
           />
@@ -153,21 +236,48 @@ function App() {
             path='/blog/we-provide-blow-straight-past-it-with-the-wheels-skidding-second'
             element={
               <BlogSinglePage
-                img='WillElectricTechnologySoonRuleTheRoad'
-                posteddate='Posted on October 6th 2021'
-                title='We provide blow straight past it with the wheels skidding'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskiddingsecond.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskiddingsecond
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskiddingsecond
+                    .title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .weprovideblowstraightpastitwiththewheelsskiddingsecond.text
+                }
               />
             }
-          />{' '}
+          />
           <Route
             path='/blog/5-genius-car-accessories-you-should-never-drive-without-third'
             element={
               <BlogSinglePage
-                img='WouldyouLetaRobotDriveyourCarOurAIFuture'
-                posteddate='Posted on October 6th 2021'
-                title='5 Genius Car Accessories You Should Never Drive Without'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutthird.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutthird
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutthird.title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutthird.text
+                }
               />
             }
           />
@@ -175,10 +285,23 @@ function App() {
             path='/blog/5-genius-car-accessories-you-should-never-drive-without-fourth'
             element={
               <BlogSinglePage
-                img='WillElectricTechnologySoonRuleTheRoad'
-                posteddate='Posted on October 6th 2021'
-                title='5 Genius Car Accessories You Should Never Drive Without'
-                text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical '
+                img={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.img
+                }
+                posteddate={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutfourth
+                    .posteddate
+                }
+                title={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.title
+                }
+                text={
+                  TEXTS.SingleBlogPage
+                    .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.text
+                }
               />
             }
           />
