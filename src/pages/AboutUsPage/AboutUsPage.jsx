@@ -44,7 +44,7 @@ const AboutUsPage = () => {
                   }}
                 ></div>
                 <div className="textsAboutUs">
-                  <h2>About us</h2>
+                  <h1>About us</h1>
                   <p>
                     Through True Rich Attended does no end it his mother since
                     real had half every him case in packages enquire we up
@@ -139,7 +139,7 @@ const AboutUsPage = () => {
               backgroundSize: "cover",
             }}
           >
-            <h6>Serve our customers and always deliver the customer service</h6>
+            <h4>Serve our customers and always deliver the customer service</h4>
             <p>
               We provide a full range of front end mechanical repairs for all
               makes and models of cars, no matter the cause. This includes
@@ -156,9 +156,9 @@ const AboutUsPage = () => {
               backgroundSize: "cover",
             }}
           >
-            <h6>
+            <h4>
               To be the world's most eader in automotive business solutions.
-            </h6>
+            </h4>
             <p>
               We provide a full range of front end mechanical repairs for all
               makes and models of cars, no matter the cause. This includes
@@ -175,9 +175,9 @@ const AboutUsPage = () => {
               backgroundSize: "cover",
             }}
           >
-            <h6>
+            <h4>
               We value the service we provide and our loyal returning customers
-            </h6>
+            </h4>
             <p>
               We provide a full range of front end mechanical repairs for all
               makes and models of cars, no matter the cause. This includes
@@ -188,7 +188,7 @@ const AboutUsPage = () => {
         <StyledSectionSecondary>
           <StyledSectionWrapper>
             <div className="servicesLayoutContainer">
-              <h3>Services we provide to our valued customers</h3>
+              <h2>Services we provide to our valued customers</h2>
               <div className="layout">
                 <div className="serviceCard">
                   <ServiceCard
@@ -246,7 +246,7 @@ const AboutUsPage = () => {
         <StyledSectionPrimary>
           <StyledSectionWrapper>
             <div className="meetOurTeamContainer">
-              <h3>Meet our Team</h3>
+              <h1>Meet our Team</h1>
               <div className="layout">
                 <TeamMemberCard
                   name="Javena Melo"
