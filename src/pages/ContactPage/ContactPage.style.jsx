@@ -19,15 +19,15 @@ export const StyledSectionWrapper = styled.div`
 
   padding: 80px 0 128px 0;
 
-  h2 {
+  h1 {
     width: 38%;
 
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
 
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 84px;
-    letter-spacing: -0.03em;
+    font-weight: ${(props) => props.theme.primary.headings.h1.fontWeight};
+    font-size: ${(props) => props.theme.primary.headings.h1.fontSize};
+    line-height: ${(props) => props.theme.primary.headings.h1.lineHeaght};
+    letter-spacing: ${(props) => props.theme.primary.headings.h1.letterSpacing};
   }
 
   .layout {
@@ -51,7 +51,7 @@ export const StyledSectionWrapper = styled.div`
 
         input {
           width: 100%;
-          background: #f2f2f2;
+          background: ${(props) => props.theme.primary.colors.extraLightGrey};
 
           border: 0;
           border-radius: 2px;
@@ -59,11 +59,14 @@ export const StyledSectionWrapper = styled.div`
           padding: 23px 40px;
 
           ::placeholder {
-            color: #1e1b1b;
+            color: ${(props) => props.theme.primary.colors.dark};
 
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 28px;
+            font-weight: ${(props) =>
+              props.theme.primary.paragraphs.medium.fontWeight};
+            font-size: ${(props) =>
+              props.theme.primary.paragraphs.medium.fontSize};
+            line-height: ${(props) =>
+              props.theme.primary.paragraphs.medium.lineHeaght};
           }
         }
       }
@@ -77,16 +80,18 @@ export const StyledSectionWrapper = styled.div`
       gap: 32px;
 
       p {
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
         opacity: 0.7;
 
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 28px;
+        font-weight: ${(props) =>
+          props.theme.primary.paragraphs.medium.fontWeight};
+        font-size: ${(props) => props.theme.primary.paragraphs.medium.fontSize};
+        line-height: ${(props) =>
+          props.theme.primary.paragraphs.medium.lineHeaght};
       }
 
       h6 {
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
 
         font-weight: 600;
         font-size: 24px;
@@ -99,9 +104,9 @@ export const StyledSectionWrapper = styled.div`
   @media ${device.tablet} {
     padding: 80px 24px;
 
-    h2 {
-      font-size: 48px;
-      line-height: 60px;
+    h1 {
+      font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
       width: 100%;
     }
 
@@ -112,8 +117,10 @@ export const StyledSectionWrapper = styled.div`
         .inputs {
           input {
             ::placeholder {
-              font-size: 14px;
-              line-height: 24px;
+              font-size: ${(props) =>
+                props.theme.primary.paragraphs.small.fontSize};
+              line-height: ${(props) =>
+                props.theme.primary.paragraphs.small.lineHeaght};
             }
           }
         }
@@ -123,8 +130,9 @@ export const StyledSectionWrapper = styled.div`
         gap: 18px;
 
         h6 {
-          font-size: 20px;
-          line-height: 28px;
+          font-size: ${(props) => props.theme.primary.headings.h6.fontSize};
+          line-height: ${(props) => props.theme.primary.headings.h6.lineHeaght};
+          width: 100%;
         }
       }
     }
