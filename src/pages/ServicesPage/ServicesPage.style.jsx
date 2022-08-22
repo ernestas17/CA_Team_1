@@ -10,8 +10,8 @@ export const StyledSectionPrimary = styled.div`
 `;
 
 export const StyledSectionSecondary = styled.div`
-  width: 100%;
-  background: #f5f5f5;
+  /* width: 100%;
+  background: ${(props) => props.theme.primary.colors.lightGrey}; ; */
 `;
 
 export const StyledSectionWrapper = styled.div`
@@ -33,26 +33,30 @@ export const StyledSectionWrapper = styled.div`
 
   .ourServices {
     width: 100%;
-    background-color: #1e1b1b;
+    background-color: ${(props) => props.theme.primary.colors.dark};
 
     padding: 96px 96px 146px 96px;
 
-    h2 {
-      font-weight: 800;
-      font-size: 64px;
-      line-height: 84px;
+    h1 {
+      font-weight: ${(props) => props.theme.primary.headings.h1.fontWeight};
+      font-size: ${(props) => props.theme.primary.headings.h1.fontSize};
+      line-height: ${(props) => props.theme.primary.headings.h1.lineHeaght};
+      letter-spacing: ${(props) =>
+        props.theme.primary.headings.h1.letterSpacing};
 
-      color: #f2f2f2;
+      color: ${(props) => props.theme.primary.colors.extraLightGrey};
 
       margin-bottom: 16px;
     }
 
     p {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 32px;
+      font-weight: ${(props) =>
+        props.theme.primary.paragraphs.large.fontWeight};
+      font-size: ${(props) => props.theme.primary.paragraphs.large.fontSize};
+      line-height: ${(props) =>
+        props.theme.primary.paragraphs.large.lineHeaght};
 
-      color: #f2f2f2;
+      color: ${(props) => props.theme.primary.colors.extraLightGrey};
 
       margin-bottom: 48px;
     }
@@ -64,15 +68,15 @@ export const StyledSectionWrapper = styled.div`
 
     .autoDiagnostics {
       padding: 64px 48px 43px 48px;
-      background-color: #fff;
+      background-color: ${(props) => props.theme.primary.colors.light};
 
       .autoDiagnosticsCTA {
         p:hover {
-          color: #ff6433;
+          color: ${(props) => props.theme.primary.colors.primary};
         }
 
         i:hover {
-          color: #ff6433;
+          color: ${(props) => props.theme.primary.colors.primary};
         }
       }
 
@@ -87,12 +91,14 @@ export const StyledSectionWrapper = styled.div`
         margin-bottom: 32px;
       }
 
-      h4 {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 67.2px;
+      h3 {
+        font-weight: ${(props) => props.theme.primary.headings.h3.fontWeight};
+        font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
+        letter-spacing: ${(props) =>
+          props.theme.primary.headings.h3.letterSpacing};
 
-        color: #1e1b1b;
+        color: ${(props) => props.theme.primary.colors.dark};
 
         margin-bottom: 16px;
       }
@@ -102,7 +108,7 @@ export const StyledSectionWrapper = styled.div`
         font-size: 24px;
         line-height: 36px;
 
-        color: #232536;
+        color: ${(props) => props.theme.primary.colors.dark};
         opacity: 0.6;
 
         margin-bottom: 32px;
@@ -114,19 +120,22 @@ export const StyledSectionWrapper = styled.div`
         gap: 16px;
 
         p {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 32px;
+          font-weight: ${(props) =>
+            props.theme.primary.paragraphs.large.fontWeight};
+          font-size: ${(props) =>
+            props.theme.primary.paragraphs.large.fontSize};
+          line-height: ${(props) =>
+            props.theme.primary.paragraphs.large.lineHeaght};
           opacity: 1;
 
-          color: #1e1b1b;
+          color: ${(props) => props.theme.primary.colors.dark};
           margin-bottom: 0px;
         }
 
         i {
           font-size: 18px;
           line-height: 32px;
-          color: #1e1b1b;
+          color: ${(props) => props.theme.primary.colors.dark};
         }
       }
     }
@@ -158,23 +167,26 @@ export const StyledSectionWrapper = styled.div`
     .containerHowWeWorkTextLayout {
       width: calc(50% - 44px);
 
-      h4 {
-        color: #1e1b1b;
+      h3 {
+        color: ${(props) => props.theme.primary.colors.dark};
 
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 67px;
-        letter-spacing: -0.03em;
+        font-weight: ${(props) => props.theme.primary.headings.h3.fontWeight};
+        font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
+        letter-spacing: ${(props) =>
+          props.theme.primary.headings.h3.letterSpacing};
 
         margin-bottom: 32px;
       }
 
       p {
-        color: #232536;
+        color: ${(props) => props.theme.primary.colors.dark};
 
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 32px;
+        font-weight: ${(props) =>
+          props.theme.primary.paragraphs.large.fontWeight};
+        font-size: ${(props) => props.theme.primary.paragraphs.large.fontSize};
+        line-height: ${(props) =>
+          props.theme.primary.paragraphs.large.lineHeaght};
         opacity: 0.6;
 
         margin-bottom: 32px;
@@ -190,7 +202,7 @@ export const StyledSectionWrapper = styled.div`
           gap: 24px;
 
           i {
-            color: #00d289;
+            color: ${(props) => props.theme.primary.colors.green};
             font-size: 48px;
           }
 
@@ -264,9 +276,9 @@ export const StyledSectionWrapper = styled.div`
 
     .ourServices {
       padding: 48px;
-      h2 {
-        font-size: 48px;
-        line-height: 60px;
+      h1 {
+        font-size: ${(props) => props.theme.primary.headings.h3.fontSize};
+        line-height: ${(props) => props.theme.primary.headings.h3.lineHeaght};
       }
     }
   }

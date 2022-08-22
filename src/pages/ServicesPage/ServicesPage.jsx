@@ -35,7 +35,7 @@ const ServicesPage = () => {
             ></div>
 
             <div className="ourServices">
-              <h2>Our services</h2>
+              <h1>Our services</h1>
               <p>
                 Through True Rich Attended does no end it his mother since real
                 had half every him case in packages enquire we up ecstatic
@@ -61,7 +61,7 @@ const ServicesPage = () => {
                   />
                 </div>
 
-                <h4>Auto Diagnostics</h4>
+                <h3>Auto Diagnostics</h3>
                 <p>
                   Through True Rich Attended does no end it his mother since
                   favourable real had half every him case in packages enquire we
@@ -132,7 +132,7 @@ const ServicesPage = () => {
           <StyledSectionWrapper>
             <div className="containerHowWeWork">
               <div className="containerHowWeWorkTextLayout">
-                <h4>How we work and the process we follow</h4>
+                <h3>How we work and the process we follow</h3>
                 <div className="list">
                   <div className="listRow">
                     <i class="fa-solid fa-circle-check"></i>
