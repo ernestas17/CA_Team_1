@@ -9,7 +9,7 @@ export const StyledHeader = styled.div`
   max-width: 1280px;
   margin: 0 auto;
 
-  background-color: #fff;
+  background-color: ${(props) => props.theme.primary.colors.light};
 `;
 
 export const StyledHeaderWrapper = styled.div`
@@ -39,7 +39,7 @@ export const StyledBurgerNav = styled.div`
     top: 70px;
     right: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.primary.colors.light};
 
     display: flex;
     flex-direction: column;
@@ -50,21 +50,23 @@ export const StyledBurgerNav = styled.div`
 
     a {
       text-decoration: none;
-      color: #1e1b1b;
+      color: ${(props) => props.theme.primary.colors.dark};
 
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 600;
+      font-weight: ${(props) =>
+        props.theme.primary.paragraphs.medium.fontWeight};
+      font-size: ${(props) => props.theme.primary.paragraphs.medium.fontSize};
+      line-height: ${(props) =>
+        props.theme.primary.paragraphs.medium.lineHeaght};
 
       text-align: center;
 
       text-decoration: underline;
       text-underline-position: under left;
-      text-decoration-color: #ff6433;
+      text-decoration-color: ${(props) => props.theme.primary.colors.primary};
     }
 
     a:hover {
-      color: #ff6433;
+      color: ${(props) => props.theme.primary.colors.primary};
     }
   }
 
@@ -94,15 +96,15 @@ export const StyledLinksWrapper = styled.ul`
 
   a {
     text-decoration: none;
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
 
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 600;
+    font-weight: ${(props) => props.theme.primary.paragraphs.medium.fontWeight};
+    font-size: ${(props) => props.theme.primary.paragraphs.medium.fontSize};
+    line-height: ${(props) => props.theme.primary.paragraphs.medium.lineHeaght};
   }
 
   a:hover {
-    color: #ff6433;
+    color: ${(props) => props.theme.primary.colors.primary};
   }
 `;
 
@@ -120,18 +122,23 @@ export const StyledAssistanceWrapper = styled.div`
 
   div {
     p {
-      color: #1e1b1b;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+      color: ${(props) => props.theme.primary.colors.dark};
+
+      font-weight: ${(props) =>
+        props.theme.primary.paragraphs.large.fontWeight};
+      font-size: ${(props) => props.theme.primary.paragraphs.large.fontSize};
+      line-height: ${(props) =>
+        props.theme.primary.paragraphs.large.lineHeaght};
     }
 
     p:nth-child(1) {
       opacity: 0.7;
 
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-weight: ${(props) =>
+        props.theme.primary.paragraphs.small.fontWeight};
+      font-size: ${(props) => props.theme.primary.paragraphs.small.fontSize};
+      line-height: ${(props) =>
+        props.theme.primary.paragraphs.small.lineHeaght};
     }
   }
 `;
