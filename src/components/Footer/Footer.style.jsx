@@ -6,7 +6,7 @@ const device = {
 };
 
 export const StyledWrapper = styled.div`
-  background: #1e1b1b;
+  background: ${(props) => props.theme.primary.colors.dark};
   padding: 64px 0;
 
   @media ${device.tablet} {
@@ -30,17 +30,19 @@ export const StyledInnerWrapper = styled.div`
     gap: 36px;
 
     a {
-      color: #ffffff;
+      color: ${(props) => props.theme.primary.colors.light};
 
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 28px;
+      font-weight: ${(props) =>
+        props.theme.primary.paragraphs.medium.fontWeight};
+      font-size: ${(props) => props.theme.primary.paragraphs.medium.fontSize};
+      line-height: ${(props) =>
+        props.theme.primary.paragraphs.medium.lineHeaght};
 
       text-decoration: none;
 
       &:hover {
         cursor: pointer;
-        color: #ff6433;
+        color: ${(props) => props.theme.primary.colors.primary};
       }
     }
   }
@@ -48,9 +50,9 @@ export const StyledInnerWrapper = styled.div`
   .copyright {
     color: #939191;
 
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
+    font-weight: ${(props) => props.theme.primary.paragraphs.medium.fontWeight};
+    font-size: ${(props) => props.theme.primary.paragraphs.medium.fontSize};
+    line-height: ${(props) => props.theme.primary.paragraphs.medium.lineHeaght};
   }
 
   @media ${device.tablet} {
