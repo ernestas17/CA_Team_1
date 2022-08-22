@@ -17,6 +17,7 @@ import CardM5 from './photos/CardM5.png';
 import CardM6 from './photos/CardM6.png';
 
 // Components
+import ContactUs from '../../components/ContactUs';
 import Card from './components/card';
 import CardSm from './components/CardSm';
 import CardM from './components/CardM';
@@ -251,6 +252,7 @@ const BlogPage = ({ deviceSize }) => {
           />
         </div>
       </StyledCards>
+      <ContactUs />
       <CallToAction deviceSize={deviceSize}></CallToAction>
     </main>
   );
