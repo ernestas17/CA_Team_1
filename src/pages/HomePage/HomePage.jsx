@@ -57,10 +57,11 @@ const HomePage = ({ deviceSize }) => {
             </div>
           </div>
 
-          <div
-            className='StyledHomeHeaderImage'
-            style={{ backgroundImage: `url(${Image})` }}
-          >
+          <div className='StyledHomeHeaderImage'>
+            <div
+              className='StyledHomeHeader'
+              style={{ backgroundImage: `url(${Image})` }}
+            ></div>
             <div className='StyledHomeHeaderImageTextCircleShadow'>
               <div className='StyledHomeHeaderImageTextCircle'>
                 <div className='StyledHomeHeaderImageGreenCircle'>
@@ -250,34 +251,42 @@ const HomePage = ({ deviceSize }) => {
               <Card
                 icon={<i className='fa-solid fa-eye'></i>}
                 headline='Diagnostics'
+                url='autodiagnostics'
               />
               <Card
                 icon={<i className='fa-brands fa-searchengin'></i>}
                 headline='Engine Repair'
+                url='enginerepair'
               />
               <Card
                 icon={<i className='fa-solid fa-car-side'></i>}
                 headline='Wheel Repair'
+                url='wheelrepair'
               />
               <Card
                 icon={<i className='fa-solid fa-oil-can'></i>}
                 headline='Oil Filter'
+                url='oilfilter'
               />
               <Card
                 icon={<i className='fa-solid fa-car-on'></i>}
                 headline='Body Work'
+                url='bodywork'
               />
               <Card
                 icon={<i className='fa-solid fa-car-battery'></i>}
                 headline='Batteries'
+                url='batteries'
               />
               <Card
                 icon={<i className='fa-solid fa-car-burst'></i>}
                 headline='Insurance Claim'
+                url='insuranceclaim'
               />
               <Card
                 icon={<i className='fa-solid fa-screwdriver-wrench'></i>}
                 headline='Custom Service'
+                url='customservice'
               />
             </StyledCard>
 
@@ -381,10 +390,8 @@ const HomePage = ({ deviceSize }) => {
       <StyledFaq deviceSize={deviceSize}>
         <div className='faqWrapper'>
           <h3>Frequently Asked Questions</h3>
-
           <FAQSection deviceSize={deviceSize}></FAQSection>
         </div>
-
         <ContactUs></ContactUs>
       </StyledFaq>
     </main>
