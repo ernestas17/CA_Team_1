@@ -48,7 +48,7 @@ export const StyledSectionWrapper = styled.div`
       }
 
       .textsAboutUs {
-        background-color: #1e1b1b;
+        background-color: ${(props) => props.theme.primary.colors.dark};
 
         padding: 96px 96px 146px 96px;
 
