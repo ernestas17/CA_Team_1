@@ -61,7 +61,6 @@ const BlogPage = ({ deviceSize }) => {
           </div>
         </div>
       </StyledBlogHeader>
-
       <StyledBlogFourSection deviceSize={deviceSize}>
         <div className='wrapper'>
           <div className='first'>
@@ -128,7 +127,6 @@ const BlogPage = ({ deviceSize }) => {
           </div>
         </div>
       </StyledBlogFourSection>
-
       <StyledCards deviceSize={deviceSize}>
         <div className='wrapper'>
           <CardM
@@ -252,8 +250,8 @@ const BlogPage = ({ deviceSize }) => {
           />
         </div>
       </StyledCards>
-      <ContactUs />
       <CallToAction deviceSize={deviceSize}></CallToAction>
+      <ContactUs />
     </main>
   );
 };
