@@ -22,7 +22,7 @@ const ServiceSinglePage = ({ title, img }) => {
     <main>
       <StyledSectionPrimary>
         <StyledSectionWrapper>
-          <h3>{title}</h3>
+          <h1>{title}</h1>
 
           <div className="layout">
             <div className="left">
@@ -121,10 +121,10 @@ const ServiceSinglePage = ({ title, img }) => {
                 ></div>
               )}
 
-              <h3>
+              <h4>
                 The warning lights on your dashboard are the most obvious
                 starting point.
-              </h3>
+              </h4>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -153,10 +153,10 @@ const ServiceSinglePage = ({ title, img }) => {
                 Mauris at nisi sed elit gravida malesuada.
               </p>
 
-              <h4>
+              <h5>
                 Delaying a diagnosis and repair could lead to even bigger
                 problems down the road.
-              </h4>
+              </h5>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -171,13 +171,13 @@ const ServiceSinglePage = ({ title, img }) => {
               </p>
 
               <div className="innerLayout">
-                <h6>
+                <p>
                   Ut non urna a odio condimentum dictum. Proin egestas erat a
                   orci ultrices, vitae bibendum libero posuere. Quisque laoreet
                   tincidunt justo. Vestibulum congue dictum libero finibus
                   vehicula. Aliquam nisi velit, ultricies eget enim vel,
                   venenatis mollis ante.
-                </h6>
+                </p>
               </div>
             </div>
           </div>
