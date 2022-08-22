@@ -6,6 +6,7 @@ import FAQSection from './faqComponent/FAQSection';
 import circle1Image from './photos/circle1.png';
 import circle2Image from './photos/circle2.png';
 import circle3Image from './photos/circle3.png';
+import ContactUs from '../../components/ContactUs/ContactUs';
 
 import {
   Icon1,
@@ -383,6 +384,8 @@ const HomePage = ({ deviceSize }) => {
 
           <FAQSection deviceSize={deviceSize}></FAQSection>
         </div>
+
+        <ContactUs></ContactUs>
       </StyledFaq>
     </main>
   );
