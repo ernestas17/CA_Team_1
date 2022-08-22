@@ -22,6 +22,7 @@ import CardSm from './components/CardSm';
 import CardM from './components/CardM';
 import Button from '../../components/Button';
 import CallToAction from '../../components/CallToAction/CallToAction';
+import TEXTS from '../../shared/texts';
 
 const BlogPage = ({ deviceSize }) => {
   return (
@@ -65,30 +66,63 @@ const BlogPage = ({ deviceSize }) => {
           <div className='first'>
             <Card
               image={CardImage}
-              posteddata='Posted on October 6th 2021'
-              hg='Should I Buy a New Car or Lease a New Car in 2021?'
-              text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.'
-              url='ShouldIBuyaNewCarorLeaseaNewCarin2021'
+              posteddata={
+                TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021
+                  .posteddate
+              }
+              title={
+                TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021.title
+              }
+              text={
+                TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021
+                  .underTitleText
+              }
+              url={
+                TEXTS.SingleBlogPage.ShouldIBuyaNewCarorLeaseaNewCarin2021.url
+              }
             />
           </div>
           <div className='second'>
             <CardSm
               image={CardSmImg1}
-              url='GetanAwesomeNumberPlateforYourNewCar'
-              FirstText='Get an Awesome Number Plate for Your New Car'
-              SecondText='Posted on October 6th 2021'
+              url={
+                TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar.url
+              }
+              FirstText={
+                TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar.title
+              }
+              SecondText={
+                TEXTS.SingleBlogPage.GetanAwesomeNumberPlateforYourNewCar
+                  .posteddate
+              }
             />
             <CardSm
               image={CardSmImg2}
-              url='WouldyouLetaRobotDriveyourCarOurAIFuture'
-              FirstText='Would you Let a Robot Drive your Car? Our AI Future'
-              SecondText='Posted on October 6th 2021'
+              url={
+                TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                  .url
+              }
+              FirstText={
+                TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                  .title
+              }
+              SecondText={
+                TEXTS.SingleBlogPage.WouldyouLetaRobotDriveyourCarOurAIFuture
+                  .posteddate
+              }
             />
             <CardSm
               image={CardSmImg3}
-              url='WillElectricTechnologySoonRuleTheRoad'
-              FirstText='Will Electric Technology Soon Rule The Road?'
-              SecondText='Posted on October 6th 2021'
+              url={
+                TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad.url
+              }
+              FirstText={
+                TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad.title
+              }
+              SecondText={
+                TEXTS.SingleBlogPage.WillElectricTechnologySoonRuleTheRoad
+                  .posteddate
+              }
             />
           </div>
         </div>
@@ -97,46 +131,123 @@ const BlogPage = ({ deviceSize }) => {
       <StyledCards deviceSize={deviceSize}>
         <div className='wrapper'>
           <CardM
-            url='5-genius-car-accessories-you-should-never-drive-without'
+            url={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithout.url
+            }
             image={CardM1}
-            posteddate='Posted on October 6th 2021'
-            headline='5 Genius Car Accessories You Should Never Drive Without'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithout.posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithout.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithout.underTitleText
+            }
           />
           <CardM
-            url='5-genius-car-accessories-you-should-never-drive-without-second'
+            url={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.url
+            }
             image={CardM2}
-            posteddate='Posted on October 6th 2021'
-            headline='5 Genius Car Accessories You Should Never Drive Without'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutsecond.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutsecond
+                .underTitleText
+            }
           />
           <CardM
-            url='we-provide-blow-straight-past-it-with-the-wheels-skidding'
+            url={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskidding.url
+            }
             image={CardM3}
-            posteddate='Posted on October 6th 2021'
-            headline='We provide blow straight past it with the wheels skidding'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskidding.posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskidding.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskidding.underTitleText
+            }
           />
           <CardM
-            url='we-provide-blow-straight-past-it-with-the-wheels-skidding-second'
+            url={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskiddingsecond.url
+            }
             image={CardM4}
-            posteddate='Posted on October 6th 2021'
-            headline='We provide blow straight past it with the wheels skidding'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskiddingsecond
+                .posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskiddingsecond.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .weprovideblowstraightpastitwiththewheelsskiddingsecond
+                .underTitleText
+            }
           />
           <CardM
-            url='5-genius-car-accessories-you-should-never-drive-without-third'
+            url={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutthird.url
+            }
             image={CardM5}
-            posteddate='Posted on October 6th 2021'
-            headline='5 Genius Car Accessories You Should Never Drive Without'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutthird.posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutthird.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutthird
+                .underTitleText
+            }
           />
           <CardM
-            url='5-genius-car-accessories-you-should-never-drive-without-fourth'
+            url={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.url
+            }
             image={CardM6}
-            posteddate='Posted on October 6th 2021'
-            headline='5 Genius Car Accessories You Should Never Drive Without'
-            text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
+            posteddate={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.posteddate
+            }
+            headline={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutfourth.title
+            }
+            text={
+              TEXTS.SingleBlogPage
+                .geniuscaraccessoriesyoushouldneverdrivewithoutfourth
+                .underTitleText
+            }
           />
         </div>
       </StyledCards>
