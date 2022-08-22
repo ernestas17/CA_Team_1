@@ -9,6 +9,9 @@ export const StyledCardSm = styled.div`
   height: 192px;
   margin-top: 32px;
   margin-bottom: 32px;
+  &:hover {
+    border: 1px solid #ffffff;
+  }
   @media ${device.tablet} {
     width: 100%;
   }

@@ -8,7 +8,9 @@ const device = {
 export const StyledCard = styled.div`
   height: 606px;
   width: 405px;
-
+  &:hover {
+    border: 1px solid #ffffff;
+  }
   .image {
     width: 100%;
     height: 266px;

@@ -10,6 +10,9 @@ export const StyledCard = styled.div`
   max-width: 537px;
   background-color: #ffffff;
   padding: 32px 32px 48px 32px;
+  &:hover {
+    border: 1px solid #ffffff;
+  }
   @media ${device.tablet} {
     height: auto;
     width: 100%;
