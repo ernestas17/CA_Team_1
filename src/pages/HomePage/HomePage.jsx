@@ -286,7 +286,7 @@ const HomePage = ({ deviceSize }) => {
               <Card
                 icon={<i className='fa-solid fa-screwdriver-wrench'></i>}
                 headline='Custom Service'
-                url='autodiagnostics'
+                url='customservice'
               />
             </StyledCard>
 
