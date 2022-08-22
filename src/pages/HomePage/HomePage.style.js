@@ -284,8 +284,7 @@ export const StyledHomeHeader = styled.div`
 
     background-color: rgba(225, 225, 225, 0.43);
     @media ${device.tablet} {
-      margin-top: 50%;
-      margin-left: 5%;
+      margin-left: 20px;
     }
     @media ${device.mobile} {
       display: none;
