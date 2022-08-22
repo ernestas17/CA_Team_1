@@ -10,8 +10,8 @@ export const StyledSectionPrimary = styled.div`
 `;
 
 export const StyledSectionSecondary = styled.div`
-  /* width: 100%;
-  background: ${(props) => props.theme.primary.colors.lightGrey}; ; */
+  width: 100%;
+  background: ${(props) => props.theme.primary.colors.lightGrey}; ;
 `;
 
 export const StyledSectionWrapper = styled.div`
