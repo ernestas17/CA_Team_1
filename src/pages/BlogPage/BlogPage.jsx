@@ -68,25 +68,25 @@ const BlogPage = ({ deviceSize }) => {
               posteddata='Posted on October 6th 2021'
               hg='Should I Buy a New Car or Lease a New Car in 2021?'
               text='We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.'
-              url=''
+              url='ShouldIBuyaNewCarorLeaseaNewCarin2021'
             />
           </div>
           <div className='second'>
             <CardSm
               image={CardSmImg1}
-              url='test'
+              url='GetanAwesomeNumberPlateforYourNewCar'
               FirstText='Get an Awesome Number Plate for Your New Car'
               SecondText='Posted on October 6th 2021'
             />
             <CardSm
               image={CardSmImg2}
-              url='test'
+              url='WouldyouLetaRobotDriveyourCarOurAIFuture'
               FirstText='Would you Let a Robot Drive your Car? Our AI Future'
               SecondText='Posted on October 6th 2021'
             />
             <CardSm
               image={CardSmImg3}
-              url='test'
+              url='WillElectricTechnologySoonRuleTheRoad'
               FirstText='Will Electric Technology Soon Rule The Road?'
               SecondText='Posted on October 6th 2021'
             />
@@ -97,42 +97,42 @@ const BlogPage = ({ deviceSize }) => {
       <StyledCards deviceSize={deviceSize}>
         <div className='wrapper'>
           <CardM
-            url='genius'
+            url='5-genius-car-accessories-you-should-never-drive-without'
             image={CardM1}
             posteddate='Posted on October 6th 2021'
             headline='5 Genius Car Accessories You Should Never Drive Without'
             text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
           />
           <CardM
-            url='genius'
+            url='5-genius-car-accessories-you-should-never-drive-without-second'
             image={CardM2}
             posteddate='Posted on October 6th 2021'
             headline='5 Genius Car Accessories You Should Never Drive Without'
             text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
           />
           <CardM
-            url='genius'
+            url='we-provide-blow-straight-past-it-with-the-wheels-skidding'
             image={CardM3}
             posteddate='Posted on October 6th 2021'
             headline='We provide blow straight past it with the wheels skidding'
             text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
           />
           <CardM
-            url='genius'
+            url='we-provide-blow-straight-past-it-with-the-wheels-skidding-second'
             image={CardM4}
             posteddate='Posted on October 6th 2021'
             headline='We provide blow straight past it with the wheels skidding'
             text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
           />
           <CardM
-            url='genius'
+            url='5-genius-car-accessories-you-should-never-drive-without-third'
             image={CardM5}
             posteddate='Posted on October 6th 2021'
             headline='5 Genius Car Accessories You Should Never Drive Without'
             text='We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models'
           />
           <CardM
-            url='genius'
+            url='5-genius-car-accessories-you-should-never-drive-without-fourth'
             image={CardM6}
             posteddate='Posted on October 6th 2021'
             headline='5 Genius Car Accessories You Should Never Drive Without'
