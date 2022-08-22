@@ -1,4 +1,6 @@
 import { StyledBlogSingle } from './BlogSinglePage.style';
+import { useParams } from 'react-router-dom';
+import TEXTS from '../../shared/texts';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import ShouldIBuyaNewCarorLeaseaNewCarin2021 from './photos/ShouldIBuyaNewCarorLeaseaNewCarin2021.png';
 import ShouldIBuyaNewCarorLeaseaNewCarin2021BOTTOM from './photos/ShouldIBuyaNewCarorLeaseaNewCarin2021BOTTOM.png';
@@ -9,6 +11,10 @@ import WouldyouLetaRobotDriveyourCarOurAIFutureBOTTOM from './photos/WouldyouLet
 import WillElectricTechnologySoonRuleTheRoad from './photos/WillElectricTechnologySoonRuleTheRoad.jpg';
 import WillElectricTechnologySoonRuleTheRoadBOTTOM from './photos/WillElectricTechnologySoonRuleTheRoadBOTTOM.jpg';
 const BlogSinglePage = ({ deviceSize, posteddate, title, text, img }) => {
+  const { id } = useParams();
+
+  console.log(id);
+
   return (
     <main>
       <StyledBlogSingle deviceSize={deviceSize}>
