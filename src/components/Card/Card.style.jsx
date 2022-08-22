@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCardWrapper = styled.div`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.primary.colors.light};
   padding: 62px;
 
   display: flex;
@@ -13,20 +13,14 @@ export const StyledCardWrapper = styled.div`
   width: 100%;
   height: 100%;
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   i {
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
     font-size: 46px;
     text-align: center;
   }
 
   h4 {
-    color: #1e1b1b;
+    color: ${(props) => props.theme.primary.colors.dark};
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
@@ -34,14 +28,14 @@ export const StyledCardWrapper = styled.div`
   }
 
   &:hover {
-    background-color: #ff6433;
+    background-color: ${(props) => props.theme.primary.colors.primary};
 
     i {
-      color: #fff;
+      color: ${(props) => props.theme.primary.colors.light};
     }
 
     h4 {
-      color: #fff;
+      color: ${(props) => props.theme.primary.colors.light};
     }
   }
 `;
